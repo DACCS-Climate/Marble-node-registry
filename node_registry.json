@@ -1,47 +1,10 @@
 {
     "UofT":{
-        "affiliation":"University of Toronto",
-        "location":"Toronto",
         "URL":"to-be-added",
-        "capabilities":[
-            "data",
-            "compute"
-        ],
-        "deployed_since": "March, 2023",
-        "administrators":[
-            {
-                "name": "Deepak Chandan",
-                "email": "dchandan@cs.toronto.edu"
-            },
-            {
-                "name": "Misha Shwarts",
-                "email": "mschwa@cs.toronto.edu"
-            },
-            {
-                "name": "Alexander Yu",
-                "email": "alexanderc.yu@utoronto.ca"
-            }
-        ],
-        "support_contact": "somesupport@address.com"
+        "support_contact": "somesupport@example.com"
     },
-
     "PAVICS":{
-        "affiliation":"Ouranos",
-        "location":"Montreal",
         "URL":"https://pavics.ouranos.ca",
-        "capabilities":[
-            "data",
-            "compute"
-        ],
-        "deployed_since": "complete me",
-        "administrators":[
-            {
-                "name": "Trevor Smith",
-                "email": "smith.trevorj@ouranos.ca"
-            }
-        ],
         "support_contact": "pavics@ouranos.ca"
-
     }
-
 }
