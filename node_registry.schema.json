@@ -46,7 +46,7 @@
                     	"type": "object",
                         "required": ["url", "name", "type", "documentation", "description"],
                         "properties": {
-                        	"href": {
+                        	"url": {
                             	"type": "string",
                                 "format": "uri",
                                 "pattern": "^https?://"
