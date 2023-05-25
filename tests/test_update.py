@@ -261,7 +261,7 @@ class TestOnlineNodeInitialUpdateWithValidServicesAndVersion(ValidResponseTests,
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": "thredds",
+                "type": ["thredds"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -277,7 +277,7 @@ class TestOnlineNodeInitialUpdateWithInvalidVersion(InvalidResponseTests, Initia
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": "thredds",
+                "type": ["thredds"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -294,7 +294,7 @@ class TestOnlineNodeUpdateWithValidServicesAndVersion(ValidResponseTests, NonIni
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": "thredds",
+                "type": ["thredds"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -310,7 +310,7 @@ class TestOnlineNodeUpdateWithInvalidVersion(InvalidResponseTests, NonInitialTes
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": "thredds",
+                "type": ["thredds"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
