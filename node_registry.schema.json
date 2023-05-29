@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
     "patternProperties": {
     	"^[a-zA-Z0-9_-]+$": {
         	"type": "object",
@@ -91,7 +91,7 @@
                 	"format": "email"
                 }
             },
-            "required": ["url", "date_added"],
+            "required": ["url", "date_added", "contact"],
             "additionalProperties": false
         }
     },

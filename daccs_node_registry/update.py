@@ -6,7 +6,7 @@ import requests
 import datetime
 from copy import deepcopy
 
-THIS_DIR = os.path.join(os.path.dirname(__file__))
+THIS_DIR = os.path.dirname(__file__)
 ROOT_DIR = os.path.dirname(THIS_DIR)
 SCHEMA_FILE = os.path.join(ROOT_DIR, "node_registry.schema.json")
 CURRENT_REGISTRY = os.path.join(ROOT_DIR, "node_registry.json")
