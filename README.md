@@ -27,7 +27,7 @@ When making changes to the node_registry.json file please only change or add the
   - description (a short description of your node, optional)
   - icon_url (a publicly accessible url to an icon image for your node, optional)
   - location (latitude and longitude of your organization, optional)
-  - contact (an email address that can be used by users to contact you if they have questions about your node, optional)
+  - contact (an email address that can be used by users to contact you if they have questions about your node)
 
 ## Testing
 
