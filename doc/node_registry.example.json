@@ -1,0 +1,32 @@
+{
+    "UofT":{
+        "url": "http://daccs-uoft.example.com",
+        "date_added": "2023-05-04T17:09:07+0000",
+        "affiliation": "University of Toronto",
+        "description": "This is the best node there is!",
+        "icon_url": "https://icon.example.com",
+        "location": {
+            "longitude": -79.39, 
+            "latitude": 43.65
+        },
+        "contact": "somesupport@example.com",
+        "services": [
+            {
+                "name": "geoserver",
+                "url": "https://infomatics-dcs.cs.toronto.edu/geoserver",
+                "type": ["geoserver"],
+                "documentation": "https://docs.geoserver.org/",
+                "description": "GeoServer is a server that allows users to view and edit geospatial data."
+            }, {
+                "name": "weaver",
+                "url": "https://infomatics-dcs.cs.toronto.edu/weaver",
+                "type": ["ems"],
+                "documentation": "https://pavics-weaver.readthedocs.io",
+                "description": "An OGC-API flavored Execution Management Service"
+            }
+        ],
+        "last_updated": "2023-05-04T17:09:07+0000",
+        "version": "1.26.0",
+        "status": "offline"
+    }
+}
