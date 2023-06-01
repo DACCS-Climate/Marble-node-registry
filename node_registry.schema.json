@@ -59,7 +59,8 @@
                                 "type": "array",
                                 "minItems": 1,
                                 "items": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "pattern": "^catalog|data|jupyterhub|other|service-(wps|wms|wfs|wcs|ogcapi)$"
                                 }
                             },
                             "documentation": {

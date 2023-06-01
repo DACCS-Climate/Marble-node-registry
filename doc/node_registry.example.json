@@ -14,13 +14,13 @@
             {
                 "name": "geoserver",
                 "url": "https://infomatics-dcs.cs.toronto.edu/geoserver",
-                "type": ["geoserver"],
+                "type": ["data", "service-wps", "service-wms"],
                 "documentation": "https://docs.geoserver.org/",
                 "description": "GeoServer is a server that allows users to view and edit geospatial data."
             }, {
                 "name": "weaver",
                 "url": "https://infomatics-dcs.cs.toronto.edu/weaver",
-                "type": ["ems"],
+                "type": ["service-ogcapi"],
                 "documentation": "https://pavics-weaver.readthedocs.io",
                 "description": "An OGC-API flavored Execution Management Service"
             }
