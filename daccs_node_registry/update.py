@@ -58,7 +58,15 @@ def update_registry() -> None:
             sys.stderr.write(f"unable to access node named {name} at url {data['url']}. Error message: {e}\n")
             continue
 
-        data["version"] = version_response.text
+        try:
+            data["version"] = version_response.json().get("version", "unknown")
+        except requests.exceptions.JSONDecodeError:
+            registry[name] = org_data
+            registry[name]["status"] = "unresponsive"
+            sys.stderr.write(
+                f"invalid json returned when accessing version for Node named {name}: {version_response.text}\n"
+            )
+            continue
 
         try:
             data["services"] = services_response.json().get("services", [])
