@@ -152,7 +152,7 @@ class InitialTests:
     """Abstract test class used to test when no updates have previously been run"""
 
     services: dict
-    version: str = "1.2.3"
+    version: dict = {"version": "1.2.3"}
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_initial_registry, example_registry_content, requests_mock):
@@ -160,7 +160,7 @@ class InitialTests:
             os.path.join(example_registry_content[example_node_name]["url"], "services"), json=self.services
         )
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "version"), text=self.version
+            os.path.join(example_registry_content[example_node_name]["url"], "version"), json=self.version
         )
         update.update_registry()
 
@@ -169,7 +169,7 @@ class NonInitialTests:
     """Abstract test class used to test when updates have previously been run"""
 
     services: dict
-    version: str = "1.2.3"
+    version: dict = {"version": "1.2.3"}
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_registry, example_registry_content, requests_mock):
@@ -177,7 +177,7 @@ class NonInitialTests:
             os.path.join(example_registry_content[example_node_name]["url"], "services"), json=self.services
         )
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "version"), text=self.version
+            os.path.join(example_registry_content[example_node_name]["url"], "version"), json=self.version
         )
         update.update_registry()
 
@@ -186,7 +186,7 @@ class ValidResponseTests:
     """Abstract test class used to test when the updates are expected to complete successfully for all nodes"""
 
     services: dict
-    version: str
+    version: dict
 
     def test_status_online(self, example_node_name, updated_registry):
         """Test that the status is updated to 'online'"""
@@ -198,7 +198,7 @@ class ValidResponseTests:
 
     def test_version_updated(self, example_node_name, updated_registry):
         """Test that the version value is updated"""
-        assert updated_registry.call_args.args[0][example_node_name]["version"] == self.version
+        assert updated_registry.call_args.args[0][example_node_name]["version"] == self.version["version"]
 
     def test_last_updated_updated(self, example_node_name, example_registry_content, updated_registry):
         """Test that the last_updated value is updated"""
@@ -214,7 +214,7 @@ class InvalidResponseTests:
     """
 
     services: dict
-    version: str
+    version: dict
 
     def test_status_invalid_configuration(self, example_node_name, updated_registry):
         """Test that the status is updated to 'invalid_configuration'"""
@@ -228,9 +228,9 @@ class InvalidResponseTests:
 
     def test_version_no_change(self, example_node_name, example_registry_content, updated_registry):
         """Test that the version value is not updated"""
-        assert updated_registry.call_args.args[0][example_node_name].get("version") == example_registry_content[
+        assert updated_registry.call_args.args[0][example_node_name].get("version", {}) == example_registry_content[
             example_node_name
-        ].get("version")
+        ].get("version", {})
 
     def test_last_updated_no_change(self, example_node_name, example_registry_content, updated_registry):
         """Test that the last_updated value is not updated"""
@@ -283,7 +283,7 @@ class TestOnlineNodeInitialUpdateWithInvalidVersion(InvalidResponseTests, Initia
             }
         ]
     }
-    version = "abc123"
+    version = {"version": "abc123"}
 
 
 class TestOnlineNodeUpdateWithValidServicesAndVersion(ValidResponseTests, NonInitialTests):
@@ -316,7 +316,7 @@ class TestOnlineNodeUpdateWithInvalidVersion(InvalidResponseTests, NonInitialTes
             }
         ]
     }
-    version = "abc123"
+    version = {"version": "abc123"}
 
 
 class TestOnlineNodeUpdateWithInvalidServices(InvalidResponseTests, NonInitialTests):
