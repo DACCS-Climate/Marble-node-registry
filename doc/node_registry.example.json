@@ -20,7 +20,7 @@
             }, {
                 "name": "weaver",
                 "url": "https://infomatics-dcs.cs.toronto.edu/weaver",
-                "type": ["service-ogcapi"],
+                "type": ["service-ogcapi_processes"],
                 "documentation": "https://pavics-weaver.readthedocs.io",
                 "description": "An OGC-API flavored Execution Management Service"
             }
