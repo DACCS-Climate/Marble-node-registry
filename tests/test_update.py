@@ -261,7 +261,7 @@ class TestOnlineNodeInitialUpdateWithValidServicesAndVersion(ValidResponseTests,
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": ["thredds"],
+                "type": ["data"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -277,7 +277,7 @@ class TestOnlineNodeInitialUpdateWithInvalidVersion(InvalidResponseTests, Initia
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": ["thredds"],
+                "type": ["data"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -294,7 +294,7 @@ class TestOnlineNodeUpdateWithValidServicesAndVersion(ValidResponseTests, NonIni
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": ["thredds"],
+                "type": ["data"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -310,7 +310,7 @@ class TestOnlineNodeUpdateWithInvalidVersion(InvalidResponseTests, NonInitialTes
             {
                 "url": "http://example.com",
                 "name": "thredds",
-                "type": ["thredds"],
+                "type": ["data"],
                 "documentation": "http://doc.example.com",
                 "description": "service description",
             }
@@ -323,3 +323,19 @@ class TestOnlineNodeUpdateWithInvalidServices(InvalidResponseTests, NonInitialTe
     """Test when updates have previously been run and the reported services are not valid"""
 
     services = {"services": [{"bad_key": "some_value"}]}
+
+
+class TestOnlineNodeUpdateWithInvalidServiceTypes(InvalidResponseTests, NonInitialTests):
+    """Test when updates have previously been run and the reported services types are not valid"""
+
+    services = {
+        "services": [
+            {
+                "url": "http://example.com",
+                "name": "thredds",
+                "type": ["some-bad-service-type"],
+                "documentation": "http://doc.example.com",
+                "description": "service description",
+            }
+        ]
+    }
