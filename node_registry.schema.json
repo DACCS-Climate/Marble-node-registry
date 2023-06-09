@@ -83,7 +83,7 @@
                       "properties": {
                         "rel": {
                           "type": "string",
-                          "const": "self"
+                          "const": "service"
                         }
                       }
                     }

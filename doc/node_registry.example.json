@@ -22,7 +22,7 @@
         "description": "GeoServer is a server that allows users to view and edit geospatial data.",
         "links": [
           {
-            "rel": "self",
+            "rel": "service",
             "type": "text/html",
             "href": "https://daccs-uoft.example.com/geoserver/"
           },
@@ -41,7 +41,7 @@
         "description": "An OGC-API flavored Execution Management Service",
         "links": [
           {
-            "rel": "self",
+            "rel": "service",
             "type": "application/json",
             "href": "https://daccs-uoft.example.com/weaver/"
           },
@@ -56,7 +56,7 @@
             "href": "https://daccs-uoft.example.com/weaver/"
           },
           {
-            "rel": "http://www.opengis.net/def/rel/ogc/1.0/conformance",
+            "rel": "conformance",
             "type": "application/json",
             "href": "https://daccs-uoft.example.com/weaver/conformance/"
           }

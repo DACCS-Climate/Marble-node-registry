@@ -12,7 +12,7 @@ GOOD_SERVICES = {
             "keywords": ["data", "service-wps", "service-wms", "service-wfs"],
             "description": "GeoServer is a server that allows users to view and edit geospatial data.",
             "links": [
-                {"rel": "self", "type": "application/json", "href": "https://daccs-uoft.example.com/geoserver/"},
+                {"rel": "service", "type": "application/json", "href": "https://daccs-uoft.example.com/geoserver/"},
                 {"rel": "service-doc", "type": "text/html", "href": "https://docs.geoserver.org/"},
             ],
         },
@@ -21,7 +21,7 @@ GOOD_SERVICES = {
             "keywords": ["service-ogcapi_processes"],
             "description": "An OGC-API flavored Execution Management Service",
             "links": [
-                {"rel": "self", "type": "application/json", "href": "https://daccs-uoft.example.com/weaver/"},
+                {"rel": "service", "type": "application/json", "href": "https://daccs-uoft.example.com/weaver/"},
                 {"rel": "service-doc", "type": "text/html", "href": "https://pavics-weaver.readthedocs.io/"},
                 {
                     "rel": "http://www.opengis.net/def/rel/ogc/1.0/conformance",
