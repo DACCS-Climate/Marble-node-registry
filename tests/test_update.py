@@ -5,11 +5,50 @@ from copy import deepcopy
 import pytest
 from daccs_node_registry import update
 
+GOOD_SERVICES = {
+    "services": [
+        {
+            "name": "geoserver",
+            "keywords": ["data", "service-wps", "service-wms", "service-wfs"],
+            "description": "GeoServer is a server that allows users to view and edit geospatial data.",
+            "links": [
+                {"rel": "service", "type": "application/json", "href": "https://daccs-uoft.example.com/geoserver/"},
+                {"rel": "service-doc", "type": "text/html", "href": "https://docs.geoserver.org/"},
+            ],
+        },
+        {
+            "name": "weaver",
+            "keywords": ["service-ogcapi_processes"],
+            "description": "An OGC-API flavored Execution Management Service",
+            "links": [
+                {"rel": "service", "type": "application/json", "href": "https://daccs-uoft.example.com/weaver/"},
+                {"rel": "service-doc", "type": "text/html", "href": "https://pavics-weaver.readthedocs.io/"},
+                {
+                    "rel": "http://www.opengis.net/def/rel/ogc/1.0/conformance",
+                    "type": "application/json",
+                    "href": "https://example.com/weaver/conformance/",
+                },
+            ],
+        },
+    ]
+}
+
 
 @pytest.fixture(autouse=True)
 def updated_registry(mocker):
     """Mock the _write_registry function so that nothing is actually written to disk during the tests run"""
     yield mocker.patch.object(update, "_write_registry")
+
+
+@pytest.fixture(autouse=True)
+def links_json_schema(requests_mock, request):
+    """
+    Mock the `requests.get` call to the json-schema links hyper-schema so that these tests can be run offline if needed.
+    """
+    this_dir = os.path.dirname(request.fspath)
+    with open(os.path.join(this_dir, "fixtures", "links-schema-cache.json")) as f:
+        content = f.read()
+    requests_mock.get("https://json-schema.org/draft/2020-12/links", text=content)
 
 
 @pytest.fixture
@@ -256,66 +295,26 @@ class TestInitialUpdateInvalidServices(InvalidResponseTests, InitialTests):
 class TestOnlineNodeInitialUpdateWithValidServicesAndVersion(ValidResponseTests, InitialTests):
     """Test when no updates have previously been run and the reported services and version are valid"""
 
-    services = {
-        "services": [
-            {
-                "url": "http://example.com",
-                "name": "thredds",
-                "type": ["data"],
-                "documentation": "http://doc.example.com",
-                "description": "service description",
-            }
-        ]
-    }
+    services = GOOD_SERVICES
 
 
 class TestOnlineNodeInitialUpdateWithInvalidVersion(InvalidResponseTests, InitialTests):
     """Test when no updates have previously been run and the reported version is not valid"""
 
-    services = {
-        "services": [
-            {
-                "url": "http://example.com",
-                "name": "thredds",
-                "type": ["data"],
-                "documentation": "http://doc.example.com",
-                "description": "service description",
-            }
-        ]
-    }
+    services = GOOD_SERVICES
     version = {"version": "abc123"}
 
 
 class TestOnlineNodeUpdateWithValidServicesAndVersion(ValidResponseTests, NonInitialTests):
     """Test when updates have previously been run and the reported services and version are valid"""
 
-    services = {
-        "services": [
-            {
-                "url": "http://example.com",
-                "name": "thredds",
-                "type": ["data"],
-                "documentation": "http://doc.example.com",
-                "description": "service description",
-            }
-        ]
-    }
+    services = GOOD_SERVICES
 
 
 class TestOnlineNodeUpdateWithInvalidVersion(InvalidResponseTests, NonInitialTests):
     """Test when updates have previously been run and the reported version is not valid"""
 
-    services = {
-        "services": [
-            {
-                "url": "http://example.com",
-                "name": "thredds",
-                "type": ["data"],
-                "documentation": "http://doc.example.com",
-                "description": "service description",
-            }
-        ]
-    }
+    services = GOOD_SERVICES
     version = {"version": "abc123"}
 
 
@@ -325,17 +324,11 @@ class TestOnlineNodeUpdateWithInvalidServices(InvalidResponseTests, NonInitialTe
     services = {"services": [{"bad_key": "some_value"}]}
 
 
-class TestOnlineNodeUpdateWithInvalidServiceTypes(InvalidResponseTests, NonInitialTests):
-    """Test when updates have previously been run and the reported services types are not valid"""
+class TestOnlineNodeUpdateWithInvalidServiceKeywords(InvalidResponseTests, NonInitialTests):
+    """Test when updates have previously been run and the reported services keywords are not valid"""
 
-    services = {
-        "services": [
-            {
-                "url": "http://example.com",
-                "name": "thredds",
-                "type": ["some-bad-service-type"],
-                "documentation": "http://doc.example.com",
-                "description": "service description",
-            }
-        ]
-    }
+    services = deepcopy(GOOD_SERVICES)
+
+    @pytest.fixture(scope="class", autouse=True)
+    def bad_keywords(self):
+        self.services["services"][0]["keywords"] = ["something-bad"]
