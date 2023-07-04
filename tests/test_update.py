@@ -195,8 +195,12 @@ class InitialTests:
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_initial_registry, example_registry_content, requests_mock):
+        services = deepcopy(self.services)
+        for s in services.values():
+            if isinstance(s, dict) and "date_added" in s:
+                s.pop("date_added")
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "services"), json=self.services
+            os.path.join(example_registry_content[example_node_name]["url"], "services"), json=services
         )
         requests_mock.get(
             os.path.join(example_registry_content[example_node_name]["url"], "version"), json=self.version

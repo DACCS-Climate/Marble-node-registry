@@ -87,6 +87,8 @@ def update_registry() -> None:
         else:
             print(f"successfully updated Node named {name} at url {data['url']}")
             registry[name]["last_updated"] = datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
+            if registry[name].get("date_added") is None:
+                registry[name]["date_added"] = registry[name]["last_updated"]
             data["status"] = "online"
 
     _write_registry(registry)
