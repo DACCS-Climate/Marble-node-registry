@@ -18,8 +18,8 @@
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
     "icon_url": "https://pavics.ouranos.ca/assets/images/pavics_v_white.svg",
     "location": {
-      "longitude": -71.21,
-      "latitude": 46.81
+      "longitude": -73.57,
+      "latitude": 45.5
     },
     "contact": "pavics@ouranos.ca"
   }
