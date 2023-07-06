@@ -1,1 +1,26 @@
-{}
+{
+  "UofT": {
+    "url": "https://daccs.cs.toronto.edu",
+    "date_added": "2023-07-06T19:06:56.085299+00:00",
+    "affiliation": "University of Toronto",
+    "description": "A DACCS node hosted at the University of Toronto.",
+    "icon_url": "https://daccs.cs.toronto.edu/logo",
+    "location": {
+      "longitude": -79.39,
+      "latitude": 43.65
+    },
+    "contact": "daccs-info@cs.toronto.edu"
+  },
+  "PAVICS": {
+    "url": "https://pavics.ouranos.ca",
+    "date_added": "2023-07-06T19:06:56.085299+00:00",
+    "affiliation": "Ouranos",
+    "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
+    "icon_url": "https://pavics.ouranos.ca/assets/images/pavics_v_white.svg",
+    "location": {
+      "longitude": -71.21,
+      "latitude": 46.81
+    },
+    "contact": "pavics@ouranos.ca"
+  }
+}
