@@ -22,5 +22,17 @@
       "latitude": 45.5
     },
     "contact": "pavics@ouranos.ca"
+  },
+  "Hirondelle": {
+    "url": "https://hirondelle.crim.ca",
+    "date_added": "2023-07-06T17:26:09.434813-04:00",
+    "affiliation": "Computer Research Institute of Montréal (CRIM)",
+    "description": "Development server to evaluate new features of the bird-house deployment architecture.",
+    "icon_url": "https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png",
+    "location": {
+      "longitude": -73.627318,
+      "latitude": 45.5303976
+    },
+    "contact": "info@crim.ca"
   }
 }
