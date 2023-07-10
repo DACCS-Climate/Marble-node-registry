@@ -22,7 +22,6 @@ In which case, please submit the pull request with the new URL and the Executive
 
 When making changes to the node_registry.json file please only change or add the following values:
   - url (the publicly accessible URL of your node)
-  - date_added (the date the node was originally added to the network, this should only be updated once)
   - affiliation (the name of your organization, optional)
   - description (a short description of your node, optional)
   - icon_url (a publicly accessible url to an icon image for your node, optional)
