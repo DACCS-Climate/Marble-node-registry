@@ -8,7 +8,7 @@ own local databases with the information contained within it.
 
 The registry can be accessed at the following URL:
 
-https://raw.githubusercontent.com/DACCS-Climate/DACCS-node-registry/current_registry/node_registry.json
+https://raw.githubusercontent.com/DACCS-Climate/DACCS-node-registry/current-registry/node_registry.json
 
 The registry is a JSON string that contains information about all nodes in the DACCS network. This file is regularly
 updated so that the information provided is up-to-date.

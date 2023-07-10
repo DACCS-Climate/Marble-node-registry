@@ -126,7 +126,6 @@
       },
       "required": [
         "url",
-        "date_added",
         "contact"
       ],
       "additionalProperties": false
