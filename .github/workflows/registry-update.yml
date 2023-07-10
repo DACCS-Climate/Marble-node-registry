@@ -1,0 +1,32 @@
+name: Registry Update
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch:
+jobs:
+  update:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up python for updating
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: 'pip'
+      - name: Install python dependencies
+        run: |
+          pip install -r ./requirements.txt
+      - name: Run update script
+        run: |
+          python3 ./daccs_node_registry/update.py
+      - name: commit changes to "current-registry" branch
+        run: |
+          git config user.name daccs-auto-update
+          git config user.email github-actions@github.com
+          git checkout -b current-registry
+          git add node_registry.json
+          git commit -m "daccs registry update" && git push --set-upstream origin current-registry

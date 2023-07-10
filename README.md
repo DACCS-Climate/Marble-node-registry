@@ -4,7 +4,16 @@ The purpose of this repository is to serve as a single source of truth for infor
 constitute the DACCS network at any time. Active DACCS nodes will periodically retrieve this file and update their 
 own local databases with the information contained within it.
 
-## Usage
+## Access the registry
+
+The registry can be accessed at the following URL:
+
+https://raw.githubusercontent.com/DACCS-Climate/DACCS-node-registry/current_registry/node_registry.json
+
+The registry is a JSON string that contains information about all nodes in the DACCS network. This file is regularly
+updated so that the information provided is up-to-date.
+
+## Add or update information about a DACCS node
 
 This repo is only meant to be updated by administrators who either (i) manage DACCS nodes or, (ii) want to deploy a 
 new DACCS Node. 
