@@ -4,11 +4,6 @@
     "^[a-zA-Z0-9_-]+$": {
       "type": "object",
       "properties": {
-        "url": {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https?://"
-        },
         "date_added": {
           "type": "string",
           "format": "date-time"
@@ -18,11 +13,6 @@
         },
         "description": {
           "type": "string"
-        },
-        "icon_url": {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https?://"
         },
         "location": {
           "required": [
@@ -42,6 +32,47 @@
               "maximum": 180
             }
           }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "https://json-schema.org/draft/2020-12/links"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "rel": {
+                    "type": "string",
+                    "const": "collection"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "rel": {
+                    "type": "string",
+                    "const": "version"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "rel": {
+                    "type": "string",
+                    "const": "service"
+                  }
+                }
+              }
+            }
+          ]
         },
         "services": {
           "type": "array",
@@ -125,9 +156,9 @@
         }
       },
       "required": [
-        "url",
         "date_added",
-        "contact"
+        "contact",
+        "links"
       ],
       "additionalProperties": false
     }

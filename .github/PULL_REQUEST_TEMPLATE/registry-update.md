@@ -10,14 +10,14 @@ I would like to (choose one):
 - only submit changes to the `node_registry.json` file
 - only make changes to a single Node listed in the registry in the pull request
 - only make changes to the following keys (all others are updated automatically):
-  - url
-  - date_added
-  - affiliation
-  - description
-  - icon_url
-  - location
-  - contact
+  - `date_added`
+  - `affiliation`
+  - `description`
+  - `location`
+  - `contact`
+  - `links`
 - you may also change the name of the node (the key at the root of the json string) but ensure that the name is not already in use
+- see `README.md` for a description of the values and see `doc/node_registry.example.json` for examples.
 
 ## Next Steps
 

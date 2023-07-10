@@ -157,8 +157,10 @@ class TestNodeReturnsInvalidJson:
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_registry, example_registry_content, requests_mock):
-        requests_mock.get(os.path.join(example_registry_content[example_node_name]["url"], "services"), text='{"a":')
-        requests_mock.get(os.path.join(example_registry_content[example_node_name]["url"], "version"), text="1.2.3")
+        services_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "collection")
+        version_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "version")
+        requests_mock.get(services_url, text='{"a":')
+        requests_mock.get(version_url, text="1.2.3")
         update.update_registry()
 
     def test_status_unresponsive(self, example_node_name, example_registry_content, updated_registry):
@@ -195,11 +197,13 @@ class InitialTests:
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_initial_registry, example_registry_content, requests_mock):
+        services_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "collection")
+        version_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "version")
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "services"), json=self.services
+            services_url, json=self.services
         )
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "version"), json=self.version
+            version_url, json=self.version
         )
         update.update_registry()
 
@@ -212,11 +216,13 @@ class NonInitialTests:
 
     @pytest.fixture(autouse=True)
     def setup(self, example_node_name, example_registry, example_registry_content, requests_mock):
+        services_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "collection")
+        version_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "version")
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "services"), json=self.services
+            services_url, json=self.services
         )
         requests_mock.get(
-            os.path.join(example_registry_content[example_node_name]["url"], "version"), json=self.version
+            version_url, json=self.version
         )
         update.update_registry()
 

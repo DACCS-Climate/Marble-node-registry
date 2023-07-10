@@ -1,10 +1,30 @@
 {
   "UofT": {
-    "url": "http://daccs-uoft.example.com",
     "date_added": "2023-05-04T17:09:07+0000",
     "affiliation": "University of Toronto",
     "description": "This is the best node there is!",
-    "icon_url": "https://icon.example.com",
+    "links": [
+      {
+        "rel": "service",
+        "type": "text/html",
+        "href": "http://daccs-uoft.example.com"
+      },
+      {
+        "rel": "icon",
+        "type": "image/x-icon",
+        "href": "https://icon.example.com"
+      },
+      {
+        "rel": "collection",
+        "type": "application/json",
+        "href": "http://daccs-uoft.example.com/services"
+      },
+      {
+        "rel": "version",
+        "type": "application/json",
+        "href": "http://daccs-uoft.example.com/version"
+      }
+    ],
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
