@@ -20,35 +20,35 @@ plans on being a part of the network.
 If you are already part of the DACCS Network and details about your node have changed (e.g. url, contact email, etc.). 
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
-When making changes to the node_registry.json file please only change or add the following values:
+When making changes to the node_registry.json file please only change or add the following values (described using JSONPath syntax):
   - `date_added` (the date the node was originally added to the network, this should only be updated once)
   - `affiliation` (the name of your organization, optional)
   - `description` (a short description of your node, optional)
   - `location` (latitude and longitude of your organization, optional)
   - `contact` (an email address that can be used by users to contact you if they have questions about your node)
-  - `links -> version` (see links table below)
-  - `links -> collection` (see links table below)
-  - `links -> service` (see links table below)
+  - `links[?(@.rel == "version")]` (see links table below)
+  - `links[?(@.rel == "collection")]` (see links table below)
+  - `links[?(@.rel == "service")]` (see links table below)
 
 The `links` key should contain links that describe and provide access to your node. Please see the table below
 for a description of some link values that may be useful. Only `version`, `collection`, and `home` are required.
 
-| `rel`                                              | Meaning                                                                                                                                                         | 
-|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `about`                                            | URL to a summary or purpose of the node                                                                                                                         |
-| `author`                                           | URL to the maintainer/institution of the node                                                                                                                   |
-| `acl`                                              | Endpoint to Access Control List such as the `/magpie` endpoint or another access management method                                                              |
-| `collection`                                       | URL to the `/services` endpoint of the node (required)                                                                                                          |
-| `cite-as` <br> `publication`                       | Attribution by researchers to reference the node when using it for publications                                                                                 |
-| `copyright` <br> `license` <br> `terms-of-service` | Legal use of the node                                                                                                                                           |
-| `describedby`                                      | URL to full documentation and details of the node, its purpose and so on                                                                                        | 
-| `edit`                                             | A self-reference to https://github.com/DACCS-Climate/DACCS-node-registry or anywhere that the specific node registry entry to redirect users where to update it | 
-| `service`                                          | URL to the landing page of the node (required)                                                                                                                  |
-| `service-desc`                                     | URL to the `/components` endpoint of the node (if available)                                                                                                    |
-| `icon`                                             | Logo of the institution of specific node                                                                                                                        | 
-| `status`                                           | URL to a monitoring service endpoint, such as `/canarie` or another alternative                                                                                 | 
-| `version`                                          | URL to the `/version` endpoint of the node (required)                                                                                                           |
-| `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar                                                                        |
+| `rel`                                              | Meaning                                                                                                                                                         | Required | 
+|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| `about`                                            | URL to a summary or purpose of the node                                                                                                                         |          |
+| `author`                                           | URL to the maintainer/institution of the node                                                                                                                   |          |
+| `acl`                                              | Endpoint to Access Control List such as the `/magpie` endpoint or another access management method                                                              |          |
+| `collection`                                       | URL to the `/services` endpoint of the node                                                                                                                     | Yes      |
+| `cite-as` <br> `publication`                       | Attribution by researchers to reference the node when using it for publications                                                                                 |          |
+| `copyright` <br> `license` <br> `terms-of-service` | Legal use of the node                                                                                                                                           |          |
+| `describedby`                                      | URL to full documentation and details of the node, its purpose and so on                                                                                        |          | 
+| `edit`                                             | A self-reference to https://github.com/DACCS-Climate/DACCS-node-registry or anywhere that the specific node registry entry to redirect users where to update it |          | 
+| `service`                                          | URL to the landing page of the node                                                                                                                             | Yes      |
+| `service-desc`                                     | URL to the `/components` endpoint of the node (if available)                                                                                                    |          |
+| `icon`                                             | Logo of the institution of specific node                                                                                                                        |          | 
+| `status`                                           | URL to a monitoring service endpoint, such as `/canarie` or another alternative                                                                                 |          | 
+| `version`                                          | URL to the `/version` endpoint of the node                                                                                                                      | Yes      |
+| `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar                                                                        |          |
 
 ## Testing
 

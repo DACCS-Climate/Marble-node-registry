@@ -57,17 +57,10 @@ def update_registry() -> None:
                 services_url = link["href"]
             elif link["rel"] == "version":
                 version_url = link["href"]
-        if services_url is None:
-            registry[name]["status"] = "invalid_configuration"
-            sys.stderr.write(f"invalid configuration for Node named {name}: missing 'collection' link")
-            continue
-        if version_url is None:
-            registry[name]["status"] = "invalid_configuration"
-            sys.stderr.write(f"invalid configuration for Node named {name}: missing 'version' link")
-            continue
         try:
-            services_response = requests.get(services_url)
-            version_response = requests.get(version_url)
+            # This assumes the json is initially valid according to the schema
+            services_response = requests.get(services_url, headers={"Accept": "application/json"})
+            version_response = requests.get(version_url, headers={"Accept": "application/json"})
         except requests.exceptions.ConnectionError as e:
             # if either url fails, report that the node is offline
             data["status"] = "offline"
