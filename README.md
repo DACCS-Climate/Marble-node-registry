@@ -20,15 +20,19 @@ plans on being a part of the network.
 If you are already part of the DACCS Network and details about your node have changed (e.g. url, contact email, etc.). 
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
-When making changes to the node_registry.json file please only change or add the following values (described using JSONPath syntax):
+When making changes to the node_registry.json file please only change or add the following values:
   - `date_added` (the date the node was originally added to the network, this should only be updated once)
   - `affiliation` (the name of your organization, optional)
   - `description` (a short description of your node, optional)
   - `location` (latitude and longitude of your organization, optional)
   - `contact` (an email address that can be used by users to contact you if they have questions about your node)
-  - `links[?(@.rel == "version")]` (see links table below)
-  - `links[?(@.rel == "collection")]` (see links table below)
-  - `links[?(@.rel == "service")]` (see links table below)
+  - `links` (contains a list of link objects that describe URLs for each node)
+    - each link object must contain a `rel` and `href` key. 
+    - some link objects are required, see the table below for details
+
+See the [node_registry.example.json](doc/node_registry.example.json) file for example values.
+
+#### Links
 
 The `links` key should contain links that describe and provide access to your node. Please see the table below
 for a description of some link values that may be useful. Only `version`, `collection`, and `home` are required.
