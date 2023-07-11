@@ -37,6 +37,10 @@ When making changes to the node_registry.json file please only change or add the
   - location (latitude and longitude of your organization, optional)
   - contact (an email address that can be used by users to contact you if they have questions about your node)
 
+## Admin instructions
+
+Additional instructions for managing this repo (for admins only) can be found [here](doc/admin-instructions.md).
+
 ## Testing
 
 To run unittests contained in the tests/ directory:
