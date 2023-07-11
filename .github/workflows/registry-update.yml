@@ -27,6 +27,9 @@ jobs:
         run: |
           git config user.name daccs-auto-update
           git config user.email 4380924+mishaschwartz@users.noreply.github.com
-          git checkout -b current-registry
+          mv node_registry.json node_registry.json.backup
+          git fetch
+          git checkout current-registry
+          mv node_registry.json.backup node_registry.json
           git add node_registry.json
-          git commit -m "daccs registry update" && git push --force --set-upstream origin current-registry
+          git commit -m "daccs registry update" && git push
