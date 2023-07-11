@@ -4,7 +4,16 @@ The purpose of this repository is to serve as a single source of truth for infor
 constitute the DACCS network at any time. Active DACCS nodes will periodically retrieve this file and update their 
 own local databases with the information contained within it.
 
-## Usage
+## Access the registry
+
+The registry can be accessed at the following URL:
+
+https://raw.githubusercontent.com/DACCS-Climate/DACCS-node-registry/current-registry/node_registry.json
+
+The registry is a JSON string that contains information about all nodes in the DACCS network. This file is regularly
+updated so that the information provided is up-to-date.
+
+## Add or update information about a DACCS node
 
 This repo is only meant to be updated by administrators who either (i) manage DACCS nodes or, (ii) want to deploy a 
 new DACCS Node. 
@@ -21,7 +30,6 @@ If you are already part of the DACCS Network and details about your node have ch
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
 When making changes to the node_registry.json file please only change or add the following values:
-  - `date_added` (the date the node was originally added to the network, this should only be updated once)
   - `affiliation` (the name of your organization, optional)
   - `description` (a short description of your node, optional)
   - `location` (latitude and longitude of your organization, optional)
@@ -35,7 +43,7 @@ See the [node_registry.example.json](doc/node_registry.example.json) file for ex
 #### Links
 
 The `links` key should contain links that describe and provide access to your node. Please see the table below
-for a description of some link values that may be useful. Only `version`, `collection`, and `home` are required.
+for a description of some link values that may be useful.
 
 | `rel`                                              | Meaning                                                                                                                                                         | Required | 
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|

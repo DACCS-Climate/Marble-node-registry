@@ -199,6 +199,10 @@ class InitialTests:
     def setup(self, example_node_name, example_initial_registry, example_registry_content, requests_mock):
         services_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "collection")
         version_url = next(link["href"] for link in example_registry_content[example_node_name]["links"] if link["rel"] == "version")
+        services = deepcopy(self.services)
+        for s in services.values():
+            if isinstance(s, dict) and "date_added" in s:
+                s.pop("date_added")
         requests_mock.get(
             services_url, json=self.services
         )

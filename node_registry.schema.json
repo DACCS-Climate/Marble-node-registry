@@ -156,7 +156,6 @@
         }
       },
       "required": [
-        "date_added",
         "contact",
         "links"
       ],
