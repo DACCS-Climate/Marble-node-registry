@@ -62,6 +62,10 @@ for a description of some link values that may be useful.
 | `version`                                          | URL to the `/version` endpoint of the node                                                                                                                      | Yes      |
 | `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar                                                                        |          |
 
+## Admin instructions
+
+Additional instructions for managing this repo (for admins only) can be found [here](doc/admin-instructions.md).
+
 ## Testing
 
 To run unittests contained in the tests/ directory:
