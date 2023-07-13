@@ -35,7 +35,7 @@ def _write_registry(registry: dict) -> None:
     Write the registry as a json string to the 'node_registry.json' file.
     """
     with open(CURRENT_REGISTRY, "w") as f:
-        json.dump(registry, f)
+        json.dump(registry, f, indent=2)
 
 
 def update_registry() -> None:
