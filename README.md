@@ -45,22 +45,22 @@ See the [node_registry.example.json](doc/node_registry.example.json) file for ex
 The `links` key should contain links that describe and provide access to your node. Please see the table below
 for a description of some link values that may be useful.
 
-| `rel`                                              | Meaning                                                                                                                                                         | Required | 
-|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| `about`                                            | URL to a summary or purpose of the node                                                                                                                         |          |
-| `author`                                           | URL to the maintainer/institution of the node                                                                                                                   |          |
-| `acl`                                              | Endpoint to Access Control List such as the `/magpie` endpoint or another access management method                                                              |          |
-| `collection`                                       | URL to the `/services` endpoint of the node                                                                                                                     | Yes      |
-| `cite-as` <br> `publication`                       | Attribution by researchers to reference the node when using it for publications                                                                                 |          |
-| `copyright` <br> `license` <br> `terms-of-service` | Legal use of the node                                                                                                                                           |          |
-| `describedby`                                      | URL to full documentation and details of the node, its purpose and so on                                                                                        |          | 
-| `edit`                                             | A self-reference to https://github.com/DACCS-Climate/DACCS-node-registry or anywhere that the specific node registry entry to redirect users where to update it |          | 
-| `service`                                          | URL to the landing page of the node                                                                                                                             | Yes      |
-| `service-desc`                                     | URL to the `/components` endpoint of the node (if available)                                                                                                    |          |
-| `icon`                                             | Logo of the institution of specific node                                                                                                                        |          | 
-| `status`                                           | URL to a monitoring service endpoint, such as `/canarie` or another alternative                                                                                 |          | 
-| `version`                                          | URL to the `/version` endpoint of the node                                                                                                                      | Yes      |
-| `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar                                                                        |          |
+| `rel`                                              | Meaning                                                                                    | Required |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------|----------|
+| `about`                                            | link to a summary or purpose of the node                                                   |          |
+| `author`                                           | link to the website of the maintainer/institution of the node                              |          |
+| `acl`                                              | link to an Access Control List endpoint, such as `/magpie`                                 |          |
+| `collection`                                       | link to the `/services` endpoint of the node                                               | Yes      |
+| `cite-as` <br> `publication`                       | link to attribution/citation information for use when referencing the node in publications |          |
+| `copyright` <br> `license` <br> `terms-of-service` | link to legal information of the node                                                      |          |
+| `describedby`                                      | link to full documentation and details of the node, its purpose and so on                  |          |
+| `edit`                                             | A self-reference to this repo or anywhere a user can request an update to a node           |          |
+| `service`                                          | link to the landing page of the node                                                       | Yes      |
+| `service-desc`                                     | link to the `/components` endpoint of the node                                             |          |
+| `icon`                                             | link to the logo of the specific node (or the maintainer/institution's logo)               |          |
+| `status`                                           | link to a monitoring service endpoint, such as `/canarie`                                  |          |
+| `version`                                          | link to the `/version` endpoint of the node                                                | Yes      |
+| `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar   |          |
 
 ## Admin instructions
 
