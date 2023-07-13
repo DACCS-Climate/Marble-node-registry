@@ -37,6 +37,7 @@ def _write_registry(registry: dict) -> None:
     with open(CURRENT_REGISTRY, "w") as f:
         json.dump(registry, f)
 
+
 def update_registry() -> None:
     """
     Update the 'node_registry.json' file with new data returned by each node.
@@ -49,13 +50,21 @@ def update_registry() -> None:
     for name, data in registry.items():
         org_data = deepcopy(data)
         # set services and version
+        services_url = None
+        version_url = None
+        for link in data["links"]:
+            if link["rel"] == "collection":
+                services_url = link["href"]
+            elif link["rel"] == "version":
+                version_url = link["href"]
         try:
-            services_response = requests.get(os.path.join(data["url"], "services"))
-            version_response = requests.get(os.path.join(data["url"], "version"))
+            # This assumes the json is initially valid according to the schema
+            services_response = requests.get(services_url, headers={"Accept": "application/json"})
+            version_response = requests.get(version_url, headers={"Accept": "application/json"})
         except requests.exceptions.ConnectionError as e:
             # if either url fails, report that the node is offline
             data["status"] = "offline"
-            sys.stderr.write(f"unable to access node named {name} at url {data['url']}. Error message: {e}\n")
+            sys.stderr.write(f"unable to access node named {name}. Error message: {e}\n")
             continue
 
         try:
@@ -85,7 +94,7 @@ def update_registry() -> None:
             registry[name]["status"] = "invalid_configuration"
             sys.stderr.write(f"invalid configuration for Node named {name}: {e}\n")
         else:
-            print(f"successfully updated Node named {name} at url {data['url']}")
+            print(f"successfully updated Node named {name}")
             registry[name]["last_updated"] = datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
             if registry[name].get("date_added") is None:
                 registry[name]["date_added"] = registry[name]["last_updated"]

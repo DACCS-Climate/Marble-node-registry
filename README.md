@@ -30,12 +30,37 @@ If you are already part of the DACCS Network and details about your node have ch
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
 When making changes to the node_registry.json file please only change or add the following values:
-  - url (the publicly accessible URL of your node)
-  - affiliation (the name of your organization, optional)
-  - description (a short description of your node, optional)
-  - icon_url (a publicly accessible url to an icon image for your node, optional)
-  - location (latitude and longitude of your organization, optional)
-  - contact (an email address that can be used by users to contact you if they have questions about your node)
+  - `affiliation` (the name of your organization, optional)
+  - `description` (a short description of your node, optional)
+  - `location` (latitude and longitude of your organization, optional)
+  - `contact` (an email address that can be used by users to contact you if they have questions about your node)
+  - `links` (contains a list of link objects that describe URLs for each node)
+    - each link object must contain a `rel` and `href` key. 
+    - some link objects are required, see the table below for details
+
+See the [node_registry.example.json](doc/node_registry.example.json) file for example values.
+
+#### Links
+
+The `links` key should contain links that describe and provide access to your node. Please see the table below
+for a description of some link values that may be useful.
+
+| `rel`                                              | Meaning                                                                                    | Required |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------|----------|
+| `about`                                            | link to a summary or purpose of the node                                                   |          |
+| `author`                                           | link to the website of the maintainer/institution of the node                              |          |
+| `acl`                                              | link to an Access Control List endpoint, such as `/magpie`                                 |          |
+| `collection`                                       | link to the `/services` endpoint of the node                                               | Yes      |
+| `cite-as` <br> `publication`                       | link to attribution/citation information for use when referencing the node in publications |          |
+| `copyright` <br> `license` <br> `terms-of-service` | link to legal information of the node                                                      |          |
+| `describedby`                                      | link to full documentation and details of the node, its purpose and so on                  |          |
+| `edit`                                             | A self-reference to this repo or anywhere a user can request an update to a node           |          |
+| `service`                                          | link to the landing page of the node                                                       | Yes      |
+| `service-desc`                                     | link to the `/components` endpoint of the node                                             |          |
+| `icon`                                             | link to the logo of the specific node (or the maintainer/institution's logo)               |          |
+| `status`                                           | link to a monitoring service endpoint, such as `/canarie`                                  |          |
+| `version`                                          | link to the `/version` endpoint of the node                                                | Yes      |
+| `version-history`                                  | link to https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md or similar   |          |
 
 ## Admin instructions
 

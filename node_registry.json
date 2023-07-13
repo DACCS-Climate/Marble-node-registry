@@ -1,35 +1,95 @@
 {
   "UofT": {
-    "url": "https://daccs.cs.toronto.edu",
     "affiliation": "University of Toronto",
     "description": "A DACCS node hosted at the University of Toronto.",
-    "icon_url": "https://daccs.cs.toronto.edu/logo",
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
     },
-    "contact": "daccs-info@cs.toronto.edu"
+    "contact": "daccs-info@cs.toronto.edu",
+    "links": [
+      {
+        "rel": "service",
+        "type": "text/html",
+        "href": "https://daccs.cs.toronto.edu"
+      },
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "href": "https://daccs.cs.toronto.edu/logo"
+      },
+      {
+        "rel": "collection",
+        "type": "application/json",
+        "href": "https://daccs.cs.toronto.edu/services"
+      },
+      {
+        "rel": "version",
+        "type": "application/json",
+        "href": "https://daccs.cs.toronto.edu/version"
+      }
+    ]
   },
   "PAVICS": {
-    "url": "https://pavics.ouranos.ca",
     "affiliation": "Ouranos",
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
-    "icon_url": "https://pavics.ouranos.ca/assets/images/pavics_v_white.svg",
     "location": {
       "longitude": -73.57,
       "latitude": 45.5
     },
-    "contact": "pavics@ouranos.ca"
+    "contact": "pavics@ouranos.ca",
+    "links": [
+      {
+        "rel": "service",
+        "type": "text/html",
+        "href": "https://pavics.ouranos.ca"
+      },
+      {
+        "rel": "icon",
+        "type": "image/svg",
+        "href": "https://pavics.ouranos.ca/assets/images/pavics_v_white.svg"
+      },
+      {
+        "rel": "collection",
+        "type": "application/json",
+        "href": "https://pavics.ouranos.ca/services"
+      },
+      {
+        "rel": "version",
+        "type": "application/json",
+        "href": "https://pavics.ouranos.ca/version"
+      }
+    ]
   },
   "Hirondelle": {
-    "url": "https://hirondelle.crim.ca",
     "affiliation": "Computer Research Institute of Montréal (CRIM)",
     "description": "Development server to evaluate new features of the bird-house deployment architecture.",
-    "icon_url": "https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png",
     "location": {
       "longitude": -73.627318,
       "latitude": 45.5303976
     },
-    "contact": "info@crim.ca"
+    "contact": "info@crim.ca",
+    "links": [
+      {
+        "rel": "service",
+        "type": "text/html",
+        "href": "https://hirondelle.crim.ca"
+      },
+      {
+        "rel": "icon",
+        "type": "image/svg",
+        "href": "https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png"
+      },
+      {
+        "rel": "collection",
+        "type": "application/json",
+        "href": "https://hirondelle.crim.ca/services"
+      },
+      {
+        "rel": "version",
+        "type": "application/json",
+        "href": "https://hirondelle.crim.ca/version"
+      }
+    ]
   }
 }
