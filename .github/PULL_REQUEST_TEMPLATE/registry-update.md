@@ -2,8 +2,8 @@
 
 I would like to (choose one):
 
-- [ ] add a new Node to the DACCS network
-- [ ] update an existing Node in the DACCS network
+- [ ] add a new Node to the Marble network
+- [ ] update an existing Node in the Marble network
 
 ## Guidelines
 
@@ -23,7 +23,7 @@ I would like to (choose one):
 
 Submitting this pull request is typically the last step in the journey for a node to federate with the network and 
 ideally before getting to this point, you are already in conversations with the DACCS Executive Committee about your 
-plans on being a part of the network.
+plans on being a part of the network (Marble is a product of the DACCS project).
 
 If you have not already done so please reach out to the DACCS Executive Committee. This pull request will not be merged
 in until then.
