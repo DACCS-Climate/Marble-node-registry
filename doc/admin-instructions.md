@@ -3,7 +3,7 @@
 ## Allow the registry update script to push to a protected branch
 
 The [registry-update](../.github/workflows/registry-update.yml) workflow runs the 
-[update.py](../daccs_node_registry/update.py) script and pushes the changes to the `current-registry` branch. 
+[update.py](../marble_node_registry/update.py) script and pushes the changes to the `current-registry` branch. 
 
 The `current-registry` branch is locked (and *should remain locked*) so in order to allow the workflow to push 
 changes to this branch we need to provide the workflow with a personal access token (PAT) of an admin or maintainer
