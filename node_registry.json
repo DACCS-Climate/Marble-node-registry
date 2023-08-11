@@ -1,7 +1,7 @@
 {
   "UofT": {
     "affiliation": "University of Toronto",
-    "description": "A DACCS node hosted at the University of Toronto.",
+    "description": "A Marble node hosted at the University of Toronto.",
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
