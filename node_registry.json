@@ -1,7 +1,7 @@
 {
   "UofT": {
     "affiliation": "University of Toronto",
-    "description": "A Marble node hosted at the University of Toronto.",
+    "description": "A DACCS node hosted at the University of Toronto.",
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
@@ -231,8 +231,8 @@
         ]
       }
     ],
-    "last_updated": "2023-08-11T00:53:18.208496+00:00",
-    "date_added": "2023-08-11T00:53:18.208496+00:00",
+    "last_updated": "2023-08-11T22:42:14.481942+00:00",
+    "date_added": "2023-08-11T22:42:14.481942+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -467,8 +467,8 @@
         ]
       }
     ],
-    "last_updated": "2023-08-11T00:53:18.835563+00:00",
-    "date_added": "2023-08-11T00:53:18.835563+00:00",
+    "last_updated": "2023-08-11T22:42:15.396032+00:00",
+    "date_added": "2023-08-11T22:42:15.396032+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -703,8 +703,8 @@
         ]
       }
     ],
-    "last_updated": "2023-08-11T00:53:19.437623+00:00",
-    "date_added": "2023-08-11T00:53:19.437623+00:00",
+    "last_updated": "2023-08-11T22:42:16.219681+00:00",
+    "date_added": "2023-08-11T22:42:16.219681+00:00",
     "status": "online"
   }
 }
