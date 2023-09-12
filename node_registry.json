@@ -231,8 +231,8 @@
         ]
       }
     ],
-    "last_updated": "2023-09-11T00:55:39.544069+00:00",
-    "date_added": "2023-09-11T00:55:39.544069+00:00",
+    "last_updated": "2023-09-12T00:53:45.009417+00:00",
+    "date_added": "2023-09-12T00:53:45.009417+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -467,8 +467,8 @@
         ]
       }
     ],
-    "last_updated": "2023-09-11T00:55:40.339602+00:00",
-    "date_added": "2023-09-11T00:55:40.339602+00:00",
+    "last_updated": "2023-09-12T00:53:45.529764+00:00",
+    "date_added": "2023-09-12T00:53:45.529764+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -501,7 +501,7 @@
         "href": "https://hirondelle.crim.ca/version"
       }
     ],
-    "version": "1.27.1",
+    "version": "1.30.1",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/DACCS-node-registry/main/node_registry.schema.json#service",
@@ -703,8 +703,8 @@
         ]
       }
     ],
-    "last_updated": "2023-09-11T00:55:41.221963+00:00",
-    "date_added": "2023-09-11T00:55:41.221963+00:00",
+    "last_updated": "2023-09-12T00:53:46.008073+00:00",
+    "date_added": "2023-09-12T00:53:46.008073+00:00",
     "status": "online"
   }
 }
