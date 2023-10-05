@@ -29,7 +29,7 @@
         "href": "https://daccs.cs.toronto.edu/version"
       }
     ],
-    "version": "1.31.2",
+    "version": "1.33.5",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
@@ -231,8 +231,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-04T00:57:10.485902+00:00",
-    "date_added": "2023-10-04T00:57:10.485902+00:00",
+    "last_updated": "2023-10-05T00:56:25.923030+00:00",
+    "date_added": "2023-10-05T00:56:25.923030+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -442,8 +442,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-04T00:57:11.491076+00:00",
-    "date_added": "2023-10-04T00:57:11.491076+00:00",
+    "last_updated": "2023-10-05T00:56:26.512571+00:00",
+    "date_added": "2023-10-05T00:56:26.512571+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -653,8 +653,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-04T00:57:12.450951+00:00",
-    "date_added": "2023-10-04T00:57:12.450951+00:00",
+    "last_updated": "2023-10-05T00:56:27.059685+00:00",
+    "date_added": "2023-10-05T00:56:27.059685+00:00",
     "status": "online"
   }
 }
