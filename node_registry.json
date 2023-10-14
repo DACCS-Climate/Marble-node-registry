@@ -261,8 +261,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-13T00:57:50.992753+00:00",
-    "date_added": "2023-10-13T00:57:50.992753+00:00",
+    "last_updated": "2023-10-14T00:54:55.593727+00:00",
+    "date_added": "2023-10-14T00:54:55.593727+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -282,7 +282,7 @@
       {
         "rel": "icon",
         "type": "image/svg",
-        "href": "https://pavics.ouranos.ca/assets/images/pavics_v_white.svg"
+        "href": "https://pavics.ouranos.ca/assets/images/pavics_no_text.svg"
       },
       {
         "rel": "collection",
@@ -472,8 +472,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-13T00:57:51.788726+00:00",
-    "date_added": "2023-10-13T00:57:51.788726+00:00",
+    "last_updated": "2023-10-14T00:54:56.160949+00:00",
+    "date_added": "2023-10-14T00:54:56.160949+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -683,8 +683,8 @@
         ]
       }
     ],
-    "last_updated": "2023-10-13T00:57:52.675986+00:00",
-    "date_added": "2023-10-13T00:57:52.675986+00:00",
+    "last_updated": "2023-10-14T00:54:56.870337+00:00",
+    "date_added": "2023-10-14T00:54:56.870337+00:00",
     "status": "online"
   }
 }
