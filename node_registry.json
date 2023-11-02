@@ -261,8 +261,8 @@
         ]
       }
     ],
-    "last_updated": "2023-11-01T01:00:03.992261+00:00",
-    "date_added": "2023-11-01T01:00:03.992261+00:00",
+    "last_updated": "2023-11-02T00:56:38.047315+00:00",
+    "date_added": "2023-11-02T00:56:38.047315+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -472,8 +472,8 @@
         ]
       }
     ],
-    "last_updated": "2023-11-01T01:00:04.922276+00:00",
-    "date_added": "2023-11-01T01:00:04.922276+00:00",
+    "last_updated": "2023-11-02T00:56:38.876528+00:00",
+    "date_added": "2023-11-02T00:56:38.876528+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -506,7 +506,7 @@
         "href": "https://hirondelle.crim.ca/version"
       }
     ],
-    "version": "1.35.0",
+    "version": "1.37.0",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
@@ -681,10 +681,65 @@
             "href": "https://hirondelle.crim.ca/weaver/conformance/"
           }
         ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
+        "name": "stac",
+        "keywords": [
+          "catalog"
+        ],
+        "description": "Searchable spatiotemporal metadata describing climate and Earth observation datasets.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "application/json",
+            "href": "https://hirondelle.crim.ca/stac/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://github.com/radiantearth/stac-api-spec/tree/v1.0.0"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/yaml",
+            "href": "https://raw.githubusercontent.com/radiantearth/stac-api-spec/main/core/openapi.yaml"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://hirondelle.crim.ca/stac-browser/"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
+        "name": "stac-browser",
+        "keywords": [
+          "catalog"
+        ],
+        "description": "A web interface to browse the STAC catalogs.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://hirondelle.crim.ca/stac-browser/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://github.com/radiantearth/stac-browser"
+          },
+          {
+            "rel": "alternate",
+            "type": "application/json",
+            "href": "https://hirondelle.crim.ca/stac/"
+          }
+        ]
       }
     ],
-    "last_updated": "2023-11-01T01:00:05.754819+00:00",
-    "date_added": "2023-11-01T01:00:05.754819+00:00",
+    "last_updated": "2023-11-02T00:56:39.703202+00:00",
+    "date_added": "2023-11-02T00:56:39.703202+00:00",
     "status": "online"
   }
 }
