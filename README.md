@@ -37,6 +37,9 @@ When making changes to the node_registry.json file please only change or add the
     - each link object must contain a `rel` and `href` key. 
     - some link objects are required, see the table below for details
 
+The top level keys in the node_registry.json file **cannot** be modified once they have been set. These keys are used 
+as a unique identifier of your node in the network and will cause problems for node interoperability if changed.
+
 See the [node_registry.example.json](doc/node_registry.example.json) file for example values.
 
 #### Links
