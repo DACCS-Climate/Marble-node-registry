@@ -4,6 +4,9 @@
     "^[a-zA-Z0-9_-]+$": {
       "type": "object",
       "properties": {
+        "name": {
+          "type": "string"
+        },
         "date_added": {
           "type": "string",
           "format": "date-time"
@@ -157,7 +160,8 @@
       },
       "required": [
         "contact",
-        "links"
+        "links",
+        "name"
       ],
       "additionalProperties": false
     }
