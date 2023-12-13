@@ -29,182 +29,8 @@
         "href": "https://daccs.cs.toronto.edu/version"
       }
     ],
-    "version": "1.42.0",
+    "version": "2.0.1",
     "services": [
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "geoserver",
-        "keywords": [
-          "data",
-          "service-wms",
-          "service-wfs",
-          "service-wps"
-        ],
-        "description": "GeoServer is a server that allows users to view and edit geospatial data.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/geoserver/"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://docs.geoserver.org/"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "finch",
-        "keywords": [
-          "service-wps"
-        ],
-        "description": "A Web Processing Service for Climate Indicators.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://finch.readthedocs.io"
-          },
-          {
-            "rel": "service-desc",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "raven",
-        "keywords": [
-          "service-wps"
-        ],
-        "description": "A WPS providing hydrological modeling and analysis services.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://pavics-raven.readthedocs.io"
-          },
-          {
-            "rel": "service-desc",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "hummingbird",
-        "keywords": [
-          "service-wps"
-        ],
-        "description": "A WPS for metadata compliance checks used in the climate science community.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://birdhouse-hummingbird.readthedocs.io"
-          },
-          {
-            "rel": "service-desc",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "thredds",
-        "keywords": [
-          "data",
-          "catalog"
-        ],
-        "description": "A server that provides catalog, metadata, and data access services for scientific data.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/thredds/"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://www.unidata.ucar.edu/software/tds/"
-          },
-          {
-            "rel": "service-desc",
-            "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/thredds/catalog.xml"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "jupyterhub",
-        "keywords": [
-          "jupyterhub"
-        ],
-        "description": "An interactive development environment use to create and share documents that contain live code.",
-        "links": [
-          {
-            "rel": "service",
-            "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/jupyter"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://jupyter.org/hub"
-          }
-        ]
-      },
-      {
-        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
-        "name": "weaver",
-        "keywords": [
-          "service-ogcapi_processes"
-        ],
-        "description": "An OGC-API flavored Execution Management Service",
-        "links": [
-          {
-            "rel": "service",
-            "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/"
-          },
-          {
-            "rel": "service-doc",
-            "type": "text/html",
-            "href": "https://pavics-weaver.readthedocs.io/"
-          },
-          {
-            "rel": "service-desc",
-            "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/"
-          },
-          {
-            "rel": "conformance",
-            "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/conformance/"
-          }
-        ]
-      },
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
         "name": "stac",
@@ -259,10 +85,40 @@
             "href": "https://daccs.cs.toronto.edu/stac/"
           }
         ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/main/node_registry.schema.json#service",
+        "name": "weaver",
+        "keywords": [
+          "service-ogcapi_processes"
+        ],
+        "description": "An OGC-API flavored Execution Management Service",
+        "links": [
+          {
+            "rel": "service",
+            "type": "application/json",
+            "href": "https://daccs.cs.toronto.edu/weaver/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pavics-weaver.readthedocs.io/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/json",
+            "href": "https://daccs.cs.toronto.edu/weaver/"
+          },
+          {
+            "rel": "conformance",
+            "type": "application/json",
+            "href": "https://daccs.cs.toronto.edu/weaver/conformance/"
+          }
+        ]
       }
     ],
-    "last_updated": "2023-12-12T01:00:21.688810+00:00",
-    "date_added": "2023-12-12T01:00:21.688810+00:00",
+    "last_updated": "2023-12-13T01:00:00.244064+00:00",
+    "date_added": "2023-12-13T01:00:00.244064+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -472,8 +328,8 @@
         ]
       }
     ],
-    "last_updated": "2023-12-12T01:00:22.411524+00:00",
-    "date_added": "2023-12-12T01:00:22.411524+00:00",
+    "last_updated": "2023-12-13T01:00:00.795176+00:00",
+    "date_added": "2023-12-13T01:00:00.795176+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -738,8 +594,8 @@
         ]
       }
     ],
-    "last_updated": "2023-12-12T01:00:23.110996+00:00",
-    "date_added": "2023-12-12T01:00:23.110996+00:00",
+    "last_updated": "2023-12-13T01:00:01.333728+00:00",
+    "date_added": "2023-12-13T01:00:01.333728+00:00",
     "status": "online"
   }
 }
