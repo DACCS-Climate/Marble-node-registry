@@ -3,6 +3,7 @@
     "date_added": "2023-05-04T17:09:07+0000",
     "affiliation": "University of Toronto",
     "description": "This is the best node there is!",
+    "registration_status": "open",
     "links": [
       {
         "rel": "service",
