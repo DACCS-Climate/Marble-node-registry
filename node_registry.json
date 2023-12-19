@@ -81,7 +81,7 @@
       "latitude": 45.5303976
     },
     "contact": "info@crim.ca",
-    "registration_status": "closed",
+    "registration_status": "limited",
     "links": [
       {
         "rel": "service",
@@ -102,6 +102,10 @@
         "rel": "version",
         "type": "application/json",
         "href": "https://hirondelle.crim.ca/version"
+      },
+      {
+        "rel": "registration",
+        "href": "mailto:support-geo@crim.ca"
       }
     ]
   }
