@@ -7,6 +7,7 @@
       "latitude": 43.65
     },
     "contact": "daccs-info@cs.toronto.edu",
+    "registration_status": "limited",
     "links": [
       {
         "rel": "service",
@@ -27,6 +28,11 @@
         "rel": "version",
         "type": "application/json",
         "href": "https://daccs.cs.toronto.edu/version"
+      },
+      {
+        "rel": "registration",
+        "type": "text/html",
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSf3w3bBBkEcI7ehonci56rQnHsz-OPltnbwls9KogvhXWxTFQ/viewform"
       }
     ],
     "version": "2.0.2",
@@ -261,8 +267,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-16T01:00:35.279000+00:00",
-    "date_added": "2024-01-16T01:00:35.279000+00:00",
+    "last_updated": "2024-01-16T15:03:08.394285+00:00",
+    "date_added": "2024-01-16T15:03:08.394285+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -273,6 +279,7 @@
       "latitude": 45.5
     },
     "contact": "pavics@ouranos.ca",
+    "registration_status": "limited",
     "links": [
       {
         "rel": "service",
@@ -293,6 +300,11 @@
         "rel": "version",
         "type": "application/json",
         "href": "https://pavics.ouranos.ca/version"
+      },
+      {
+        "rel": "registration",
+        "type": "text/html",
+        "href": "https://forms.office.com/Pages/ResponsePage.aspx?id=jf6iw_Q8V02umCWsOYvz8Pa-ghpkFLtEhY0_uNsYGzNUM0RKREtBODQ4S0ZXNEZEUFlZRExJWkhVQSQlQCN0PWcu"
       }
     ],
     "version": "1.35.1",
@@ -472,8 +484,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-16T01:00:36.030889+00:00",
-    "date_added": "2024-01-16T01:00:36.030889+00:00",
+    "last_updated": "2024-01-16T15:03:08.838314+00:00",
+    "date_added": "2024-01-16T15:03:08.838314+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -484,6 +496,7 @@
       "latitude": 45.5303976
     },
     "contact": "info@crim.ca",
+    "registration_status": "limited",
     "links": [
       {
         "rel": "service",
@@ -504,6 +517,10 @@
         "rel": "version",
         "type": "application/json",
         "href": "https://hirondelle.crim.ca/version"
+      },
+      {
+        "rel": "registration",
+        "href": "mailto:support-geo@crim.ca"
       }
     ],
     "version": "1.37.0",
@@ -738,8 +755,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-16T01:00:36.802826+00:00",
-    "date_added": "2024-01-16T01:00:36.802826+00:00",
+    "last_updated": "2024-01-16T15:03:09.289132+00:00",
+    "date_added": "2024-01-16T15:03:09.289132+00:00",
     "status": "online"
   }
 }
