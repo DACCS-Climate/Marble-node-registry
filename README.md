@@ -34,6 +34,11 @@ When making changes to the node_registry.json file please only change or add the
   - `description` (a short description of your node, optional)
   - `location` (latitude and longitude of your organization, optional)
   - `contact` (an email address that can be used by users to contact you if they have questions about your node)
+  - `registration_status` (indicates whether the node is currently accepting new users or not)
+    - values must be one of:
+      - `open`: accepting new registration requests
+      - `limited`: accepting new registrations under limited circumstances
+      - `closed`: not accepting new registration requests
   - `links` (contains a list of link objects that describe URLs for each node)
     - each link object must contain a `rel` and `href` key. 
     - some link objects are required, see the table below for details
@@ -58,6 +63,7 @@ for a description of some link values that may be useful.
 | `copyright` <br> `license` <br> `terms-of-service` | link to legal information of the node                                                      |          |
 | `describedby`                                      | link to full documentation and details of the node, its purpose and so on                  |          |
 | `edit`                                             | A self-reference to this repo or anywhere a user can request an update to a node           |          |
+| `registration`                                     | link to a page or email address where a new user can request an account                    |          |
 | `service`                                          | link to the landing page of the node                                                       | Yes      |
 | `service-desc`                                     | link to the `/components` endpoint of the node                                             |          |
 | `icon`                                             | link to the logo of the specific node (or the maintainer/institution's logo)               |          |
