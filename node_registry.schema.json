@@ -153,11 +153,20 @@
         "contact": {
           "type": "string",
           "format": "email"
+        },
+        "registration_status": {
+          "type": "string",
+          "enum": [
+            "open",
+            "limited",
+            "closed"
+          ]
         }
       },
       "required": [
         "contact",
-        "links"
+        "links",
+        "registration_status"
       ],
       "additionalProperties": false
     }
