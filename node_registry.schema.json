@@ -1,9 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "patternProperties": {
-    "^[a-zA-Z0-9_-]+$": {
+    "^[a-zA-Z0-9]+$": {
       "type": "object",
       "properties": {
+        "name": {
+          "type": "string"
+        },
         "date_added": {
           "type": "string",
           "format": "date-time"
@@ -166,6 +169,7 @@
       "required": [
         "contact",
         "links",
+        "name",
         "registration_status"
       ],
       "additionalProperties": false

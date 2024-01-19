@@ -29,6 +29,7 @@ If you are already part of the Marble Network and details about your node have c
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
 When making changes to the node_registry.json file please only change or add the following values:
+  - `name` (the name of your node, to be displayed to users)
   - `affiliation` (the name of your organization, optional)
   - `description` (a short description of your node, optional)
   - `location` (latitude and longitude of your organization, optional)

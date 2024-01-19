@@ -1,5 +1,6 @@
 {
-  "UofT": {
+  "UofTRedOak": {
+    "name": "Red Oak",
     "affiliation": "University of Toronto",
     "description": "A Marble node hosted at the University of Toronto.",
     "location": {
@@ -37,6 +38,7 @@
     ]
   },
   "PAVICS": {
+    "name": "PAVICS",
     "affiliation": "Ouranos",
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
     "location": {
@@ -74,6 +76,7 @@
     ]
   },
   "Hirondelle": {
+    "name": "Hirondelle",
     "affiliation": "Computer Research Institute of Montréal (CRIM)",
     "description": "Development server to evaluate new features of the bird-house deployment architecture.",
     "location": {
