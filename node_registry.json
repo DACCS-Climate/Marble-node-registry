@@ -1,5 +1,6 @@
 {
-  "UofT": {
+  "UofTRedOak": {
+    "name": "Red Oak",
     "affiliation": "University of Toronto",
     "description": "A Marble node hosted at the University of Toronto.",
     "location": {
@@ -267,11 +268,12 @@
         ]
       }
     ],
-    "last_updated": "2024-01-19T01:01:02.025686+00:00",
-    "date_added": "2024-01-19T01:01:02.025686+00:00",
+    "last_updated": "2024-01-19T17:38:46.745075+00:00",
+    "date_added": "2024-01-19T17:38:46.745075+00:00",
     "status": "online"
   },
   "PAVICS": {
+    "name": "PAVICS",
     "affiliation": "Ouranos",
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
     "location": {
@@ -484,11 +486,12 @@
         ]
       }
     ],
-    "last_updated": "2024-01-19T01:01:02.921914+00:00",
-    "date_added": "2024-01-19T01:01:02.921914+00:00",
+    "last_updated": "2024-01-19T17:38:47.399949+00:00",
+    "date_added": "2024-01-19T17:38:47.399949+00:00",
     "status": "online"
   },
   "Hirondelle": {
+    "name": "Hirondelle",
     "affiliation": "Computer Research Institute of Montr\u00e9al (CRIM)",
     "description": "Development server to evaluate new features of the bird-house deployment architecture.",
     "location": {
@@ -755,8 +758,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-19T01:01:03.788792+00:00",
-    "date_added": "2024-01-19T01:01:03.788792+00:00",
+    "last_updated": "2024-01-19T17:38:47.906068+00:00",
+    "date_added": "2024-01-19T17:38:47.906068+00:00",
     "status": "online"
   }
 }
