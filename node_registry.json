@@ -8,28 +8,28 @@
       "longitude": -79.39,
       "latitude": 43.65
     },
-    "contact": "daccs-info@cs.toronto.edu",
+    "contact": "redoak-info@cs.toronto.edu",
     "registration_status": "limited",
     "links": [
       {
         "rel": "service",
         "type": "text/html",
-        "href": "https://daccs.cs.toronto.edu"
+        "href": "https://redoak.cs.toronto.edu"
       },
       {
         "rel": "icon",
         "type": "image/png",
-        "href": "https://daccs.cs.toronto.edu/logo"
+        "href": "https://redoak.cs.toronto.edu/logo"
       },
       {
         "rel": "collection",
         "type": "application/json",
-        "href": "https://daccs.cs.toronto.edu/services"
+        "href": "https://redoak.cs.toronto.edu/services"
       },
       {
         "rel": "version",
         "type": "application/json",
-        "href": "https://daccs.cs.toronto.edu/version"
+        "href": "https://redoak.cs.toronto.edu/version"
       },
       {
         "rel": "registration",
