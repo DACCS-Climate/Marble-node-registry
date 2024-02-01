@@ -49,7 +49,7 @@
           {
             "rel": "service",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/stac/"
+            "href": "https://redoak.cs.toronto.edu/stac/"
           },
           {
             "rel": "service-doc",
@@ -64,7 +64,7 @@
           {
             "rel": "alternate",
             "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/stac-browser/"
+            "href": "https://redoak.cs.toronto.edu/stac-browser/"
           }
         ]
       },
@@ -79,7 +79,7 @@
           {
             "rel": "service",
             "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/stac-browser/"
+            "href": "https://redoak.cs.toronto.edu/stac-browser/"
           },
           {
             "rel": "service-doc",
@@ -89,7 +89,7 @@
           {
             "rel": "alternate",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/stac/"
+            "href": "https://redoak.cs.toronto.edu/stac/"
           }
         ]
       },
@@ -107,7 +107,7 @@
           {
             "rel": "service",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/geoserver/"
+            "href": "https://redoak.cs.toronto.edu/geoserver/"
           },
           {
             "rel": "service-doc",
@@ -127,7 +127,7 @@
           {
             "rel": "service",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
           },
           {
             "rel": "service-doc",
@@ -137,7 +137,7 @@
           {
             "rel": "service-desc",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
           }
         ]
       },
@@ -152,7 +152,7 @@
           {
             "rel": "service",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
           },
           {
             "rel": "service-doc",
@@ -162,7 +162,7 @@
           {
             "rel": "service-desc",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
           }
         ]
       },
@@ -177,7 +177,7 @@
           {
             "rel": "service",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
           },
           {
             "rel": "service-doc",
@@ -187,7 +187,7 @@
           {
             "rel": "service-desc",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
+            "href": "https://redoak.cs.toronto.edu/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
           }
         ]
       },
@@ -203,7 +203,7 @@
           {
             "rel": "service",
             "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/thredds/"
+            "href": "https://redoak.cs.toronto.edu/thredds/"
           },
           {
             "rel": "service-doc",
@@ -213,7 +213,7 @@
           {
             "rel": "service-desc",
             "type": "text/xml",
-            "href": "https://daccs.cs.toronto.edu/thredds/catalog.xml"
+            "href": "https://redoak.cs.toronto.edu/thredds/catalog.xml"
           }
         ]
       },
@@ -228,7 +228,7 @@
           {
             "rel": "service",
             "type": "text/html",
-            "href": "https://daccs.cs.toronto.edu/jupyter"
+            "href": "https://redoak.cs.toronto.edu/jupyter"
           },
           {
             "rel": "service-doc",
@@ -248,7 +248,7 @@
           {
             "rel": "service",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/"
+            "href": "https://redoak.cs.toronto.edu/weaver/"
           },
           {
             "rel": "service-doc",
@@ -258,18 +258,18 @@
           {
             "rel": "service-desc",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/"
+            "href": "https://redoak.cs.toronto.edu/weaver/"
           },
           {
             "rel": "conformance",
             "type": "application/json",
-            "href": "https://daccs.cs.toronto.edu/weaver/conformance/"
+            "href": "https://redoak.cs.toronto.edu/weaver/conformance/"
           }
         ]
       }
     ],
-    "last_updated": "2024-01-31T00:56:39.923793+00:00",
-    "date_added": "2024-01-31T00:56:39.923793+00:00",
+    "last_updated": "2024-02-01T00:59:02.317974+00:00",
+    "date_added": "2024-02-01T00:59:02.317974+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -486,8 +486,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-31T00:56:40.367010+00:00",
-    "date_added": "2024-01-31T00:56:40.367010+00:00",
+    "last_updated": "2024-02-01T00:59:02.882795+00:00",
+    "date_added": "2024-02-01T00:59:02.882795+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -758,8 +758,8 @@
         ]
       }
     ],
-    "last_updated": "2024-01-31T00:56:40.735086+00:00",
-    "date_added": "2024-01-31T00:56:40.735086+00:00",
+    "last_updated": "2024-02-01T00:59:03.305783+00:00",
+    "date_added": "2024-02-01T00:59:03.305783+00:00",
     "status": "online"
   }
 }
