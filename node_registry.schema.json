@@ -170,7 +170,8 @@
         "contact",
         "links",
         "name",
-        "registration_status"
+        "registration_status",
+        "date_added"
       ],
       "additionalProperties": false
     }

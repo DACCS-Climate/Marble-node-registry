@@ -3,6 +3,7 @@
     "name": "Red Oak",
     "affiliation": "University of Toronto",
     "description": "A Marble node hosted at the University of Toronto.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
@@ -41,6 +42,7 @@
     "name": "PAVICS",
     "affiliation": "Ouranos",
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -73.57,
       "latitude": 45.5
@@ -79,6 +81,7 @@
     "name": "Hirondelle",
     "affiliation": "Computer Research Institute of Montréal (CRIM)",
     "description": "Development server to evaluate new features of the bird-house deployment architecture.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -73.627318,
       "latitude": 45.5303976

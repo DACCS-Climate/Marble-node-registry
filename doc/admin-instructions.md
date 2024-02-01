@@ -19,3 +19,13 @@ The following steps must be taken by a user with "Admin" or "Maintainer" level p
     - Create a new repository secret name `DACCS_NODE_REGISTRY_PAT` with the value of the token from step 1
 
 Remember that if you set an expiry date for this token you'll need to repeat these steps when the token expires.
+
+## Manual steps when adding a new node
+
+Before adding a new node to the registry for the first time, ensure that the node has the `date_added` field included
+in the registry. This should be an iso formatted datetime string which can be generated with the following snippet:
+
+```python
+import datetime
+datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
+```
