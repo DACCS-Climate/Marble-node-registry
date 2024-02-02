@@ -3,32 +3,33 @@
     "name": "Red Oak",
     "affiliation": "University of Toronto",
     "description": "A Marble node hosted at the University of Toronto.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -79.39,
       "latitude": 43.65
     },
-    "contact": "daccs-info@cs.toronto.edu",
+    "contact": "redoak-info@cs.toronto.edu",
     "registration_status": "limited",
     "links": [
       {
         "rel": "service",
         "type": "text/html",
-        "href": "https://daccs.cs.toronto.edu"
+        "href": "https://redoak.cs.toronto.edu"
       },
       {
         "rel": "icon",
         "type": "image/png",
-        "href": "https://daccs.cs.toronto.edu/logo"
+        "href": "https://redoak.cs.toronto.edu/logo"
       },
       {
         "rel": "collection",
         "type": "application/json",
-        "href": "https://daccs.cs.toronto.edu/services"
+        "href": "https://redoak.cs.toronto.edu/services"
       },
       {
         "rel": "version",
         "type": "application/json",
-        "href": "https://daccs.cs.toronto.edu/version"
+        "href": "https://redoak.cs.toronto.edu/version"
       },
       {
         "rel": "registration",
@@ -268,14 +269,14 @@
         ]
       }
     ],
-    "last_updated": "2024-02-01T00:59:02.317974+00:00",
-    "date_added": "2024-02-01T00:59:02.317974+00:00",
+    "last_updated": "2024-02-02T00:56:29.617495+00:00",
     "status": "online"
   },
   "PAVICS": {
     "name": "PAVICS",
     "affiliation": "Ouranos",
     "description": "PAVICS is a virtual laboratory facilitating the analysis of climate data.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -73.57,
       "latitude": 45.5
@@ -486,14 +487,14 @@
         ]
       }
     ],
-    "last_updated": "2024-02-01T00:59:02.882795+00:00",
-    "date_added": "2024-02-01T00:59:02.882795+00:00",
+    "last_updated": "2024-02-02T00:56:30.606958+00:00",
     "status": "online"
   },
   "Hirondelle": {
     "name": "Hirondelle",
     "affiliation": "Computer Research Institute of Montr\u00e9al (CRIM)",
     "description": "Development server to evaluate new features of the bird-house deployment architecture.",
+    "date_added": "2023-07-13T01:03:30.933732+00:00",
     "location": {
       "longitude": -73.627318,
       "latitude": 45.5303976
@@ -758,8 +759,7 @@
         ]
       }
     ],
-    "last_updated": "2024-02-01T00:59:03.305783+00:00",
-    "date_added": "2024-02-01T00:59:03.305783+00:00",
+    "last_updated": "2024-02-02T00:56:31.421135+00:00",
     "status": "online"
   }
 }
