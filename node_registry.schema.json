@@ -54,88 +54,17 @@
               }
             },
             {
-              "contains": {
-                "type": "object",
-                "properties": {
-                  "rel": {
-                    "type": "string",
-                    "const": "version"
-                  }
-                }
-              }
+              "$ref": "#/$defs/link-version"
             },
             {
-              "contains": {
-                "type": "object",
-                "properties": {
-                  "rel": {
-                    "type": "string",
-                    "const": "service"
-                  }
-                }
-              }
+              "$ref": "#/$defs/link-service"
             }
           ]
         },
         "services": {
           "type": "array",
           "items": {
-            "$anchor": "service",
-            "type": "object",
-            "required": [
-              "name",
-              "keywords",
-              "description",
-              "links"
-            ],
-            "properties": {
-              "name": {
-                "type": "string",
-                "minLength": 1
-              },
-              "keywords": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "string",
-                  "pattern": "^catalog|data|jupyterhub|other|service-(wps|wms|wfs|wcs|ogcapi_processes)$"
-                }
-              },
-              "description": {
-                "type": "string",
-                "minLength": 1
-              },
-              "links": {
-                "type": "array",
-                "items": {
-                  "$ref": "https://json-schema.org/draft/2020-12/links"
-                },
-                "allOf": [
-                  {
-                    "contains": {
-                      "type": "object",
-                      "properties": {
-                        "rel": {
-                          "type": "string",
-                          "const": "service"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "contains": {
-                      "type": "object",
-                      "properties": {
-                        "rel": {
-                          "type": "string",
-                          "const": "service-doc"
-                        }
-                      }
-                    }
-                  }
-                ]
-              }
-            }
+            "$ref": "#/$defs/service"
           }
         },
         "last_updated": {
@@ -176,5 +105,91 @@
       "additionalProperties": false
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "$defs": {
+    "link-service": {
+      "contains": {
+        "type": "object",
+        "required": ["rel"],
+        "properties": {
+          "rel": {
+            "type": "string",
+            "const": "service"
+          }
+        }
+      }
+    },
+    "link-service-doc": {
+      "contains": {
+        "type": "object",
+        "required": ["rel"],
+        "properties": {
+          "rel": {
+            "type": "string",
+            "const": "service"
+          }
+        }
+      }
+    },
+    "link-version": {
+      "contains": {
+        "type": "object",
+        "required": ["rel"],
+        "properties": {
+          "rel": {
+            "type": "string",
+            "const": "version"
+          }
+        }
+      }
+    },
+    "service": {
+      "$anchor": "service",
+      "type": "object",
+      "required": [
+        "name",
+        "keywords",
+        "description",
+        "links"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^catalog|data|jupyterhub|other|service-(wps|wms|wfs|wcs|ogcapi_processes)$"
+          }
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "$comment": "Pattern from 'https://semver.org/'.",
+          "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+        },
+        "links": {
+          "$comment": "Links for individual services does not enforce 'rel: version' for backward compatibility.",
+          "type": "array",
+          "items": {
+            "$ref": "https://json-schema.org/draft/2020-12/links"
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/link-service"
+            },
+            {
+              "$ref": "#/$defs/link-service-doc"
+            }
+          ]
+        }
+      }
+    }
+  }
 }
