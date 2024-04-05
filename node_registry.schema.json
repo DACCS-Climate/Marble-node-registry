@@ -126,7 +126,7 @@
         "properties": {
           "rel": {
             "type": "string",
-            "const": "service"
+            "const": "service-doc"
           }
         }
       }
