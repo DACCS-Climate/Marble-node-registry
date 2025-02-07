@@ -37,7 +37,7 @@
         "href": "https://docs.google.com/forms/d/e/1FAIpQLSf3w3bBBkEcI7ehonci56rQnHsz-OPltnbwls9KogvhXWxTFQ/viewform"
       }
     ],
-    "version": "2.7.1",
+    "version": "2.9.0",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
@@ -117,7 +117,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "geoserver",
-        "version": "2.22.2",
+        "version": "2.25.2",
         "types": [
           "data",
           "wms",
@@ -145,7 +145,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/geoserver:2.22.2-kartoza-build20230226-r7-allow-change-context-root-and-fix-missing-stable-plugins-and-avoid-chown-datadir"
+            "href": "registry.hub.docker.com/pavics/geoserver:2.25.2--v2024.06.25-kartoza"
           }
         ]
       },
@@ -254,7 +254,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "thredds",
-        "version": "4.6.18-unidata-2022-01",
+        "version": "5.5.0-unidata-2024-11-19",
         "types": [
           "data",
           "catalog"
@@ -283,14 +283,14 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/thredds-docker:4.6.18-unidata-2022-01"
+            "href": "registry.hub.docker.com/pavics/thredds-docker:5.5-unidata-2024-11-19-with-tds-plugin-jar-with-dependencies.jar"
           }
         ]
       },
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "jupyterhub",
-        "version": "4.1.5-20240426",
+        "version": "5.2.1-20241114",
         "types": [
           "jupyterhub"
         ],
@@ -312,14 +312,14 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/jupyterhub:4.1.5-20240426"
+            "href": "registry.hub.docker.com/pavics/jupyterhub:5.2.1-20241114"
           }
         ]
       },
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "weaver",
-        "version": "5.6.1",
+        "version": "6.1.1",
         "types": [
           "ogcapi_processes",
           "wps"
@@ -352,12 +352,12 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/weaver:5.6.1"
+            "href": "registry.hub.docker.com/pavics/weaver:6.1.1"
           }
         ]
       }
     ],
-    "last_updated": "2025-02-06T01:14:27.528513+00:00",
+    "last_updated": "2025-02-07T01:14:33.187704+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -575,7 +575,7 @@
         ]
       }
     ],
-    "last_updated": "2025-02-06T01:14:27.900715+00:00",
+    "last_updated": "2025-02-07T01:14:33.608592+00:00",
     "status": "online"
   },
   "Hirondelle": {
