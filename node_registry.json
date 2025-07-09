@@ -324,7 +324,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "weaver",
-        "version": "6.1.1",
+        "version": "6.6.0",
         "types": [
           "ogcapi_processes",
           "wps"
@@ -357,12 +357,12 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/weaver:6.1.1"
+            "href": "registry.hub.docker.com/pavics/weaver:6.6.0"
           }
         ]
       }
     ],
-    "last_updated": "2025-07-08T01:38:22.597090+00:00",
+    "last_updated": "2025-07-09T01:39:43.016130+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -580,7 +580,7 @@
         ]
       }
     ],
-    "last_updated": "2025-07-08T01:38:23.280780+00:00",
+    "last_updated": "2025-07-09T01:39:43.405156+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -945,7 +945,7 @@
         ]
       }
     ],
-    "last_updated": "2025-07-08T01:38:24.029351+00:00",
+    "last_updated": "2025-07-09T01:39:43.779789+00:00",
     "status": "online"
   }
 }
