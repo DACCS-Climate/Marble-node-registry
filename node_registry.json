@@ -362,7 +362,7 @@
         ]
       }
     ],
-    "last_updated": "2025-08-27T01:22:08.161815+00:00",
+    "last_updated": "2025-08-28T01:21:21.223209+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -580,7 +580,7 @@
         ]
       }
     ],
-    "last_updated": "2025-08-27T01:22:08.487914+00:00",
+    "last_updated": "2025-08-28T01:21:21.749530+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -620,12 +620,12 @@
         "href": "mailto:support-geo@crim.ca"
       }
     ],
-    "version": "2.16.3",
+    "version": "2.16.12",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "stac",
-        "version": "2.4.3-crim-main",
+        "version": "6.0.0-crim-2.0.1",
         "types": [
           "catalog",
           "data"
@@ -658,14 +658,14 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "ghcr.io/crim-ca/stac-app:0.0.0"
+            "href": "ghcr.io/crim-ca/stac-app:2.0.1"
           }
         ]
       },
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "stac-browser",
-        "version": "3.0.0-beta.5-crim-docker-image-push",
+        "version": "3.4.0-dev-crim",
         "types": [
           "catalog",
           "data"
@@ -693,7 +693,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "ghcr.io/crim-ca/stac-browser:docker_image_push"
+            "href": "ghcr.io/crim-ca/stac-browser:3.4.0-dev"
           }
         ]
       },
@@ -769,7 +769,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
         "name": "raven",
-        "version": "0.18.1",
+        "version": "0.19.0",
         "types": [
           "wps"
         ],
@@ -796,7 +796,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/raven:0.18.1"
+            "href": "registry.hub.docker.com/pavics/raven:0.19.0"
           }
         ]
       },
@@ -945,7 +945,7 @@
         ]
       }
     ],
-    "last_updated": "2025-08-27T01:22:08.815735+00:00",
+    "last_updated": "2025-08-28T01:21:22.173063+00:00",
     "status": "online"
   }
 }
