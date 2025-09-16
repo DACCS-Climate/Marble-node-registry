@@ -20,7 +20,9 @@ new Marble Node.
 
 If you want to deploy a new Marble Node and connect it to the Marble network (connecting a node to the Marble network 
 is what makes a node a Marble node), then fork this repo and edit the node_registry.json file with information about 
-the base URL at which your node can be accessed. Then, please submit a pull request with your changes. The DACCS (Data Analytics for Canadian Climate Services) Executive Committee (the DACCS project manages the Marble network) will review the request to determine whether-or-not to allow your node to become a part of the 
+the base URL at which your node can be accessed. Then, please submit a pull request with your changes.
+The DACCS (Data Analytics for Canadian Climate Services) Executive Committee (the DACCS project manages the Marble network)
+will review the request to determine whether-or-not to allow your node to become a part of the 
 network. Updating this repo is typically the last step in the journey for a node to federate with the network and 
 ideally before getting to this point, you are already in conversations with the DACCS Executive Committee about your 
 plans on being a part of the network.
@@ -28,7 +30,7 @@ plans on being a part of the network.
 If you are already part of the Marble Network and details about your node have changed (e.g. url, contact email, etc.). 
 In which case, please submit the pull request with the new URL and the Executive Committee will approve it quickly.
 
-When making changes to the node_registry.json file please only change or add the following values:
+When making changes to the [`node_registry.json`](./node_registry.json) file please only change or add the following values:
   - `name` (the name of your node, to be displayed to users)
   - `affiliation` (the name of your organization, optional)
   - `description` (a short description of your node, optional)
@@ -65,7 +67,9 @@ for a description of some link values that may be useful.
 | `edit`                                             | A self-reference to this repo or anywhere a user can request an update to a node           |          |
 | `registration`                                     | link to a page or email address where a new user can request an account                    |          |
 | `service`                                          | link to the landing page of the node                                                       | Yes      |
-| `service-desc`                                     | link to the `/components` endpoint of the node                                             |          |
+| `service-desc`                                     | link to the `/components` endpoint of the node (or another location that can list them)    |          |
+| `service-meta`                                     | link to machine readable definitions describing the node                                   |          |
+| `service-doc`                                      | link to human readable documentation describing the node                                   |          |
 | `icon`                                             | link to the logo of the specific node (or the maintainer/institution's logo)               |          |
 | `status`                                           | link to a monitoring service endpoint, such as `/canarie`                                  |          |
 | `version`                                          | link to the `/version` endpoint of the node                                                | Yes      |
