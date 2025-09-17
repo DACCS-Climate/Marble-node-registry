@@ -362,7 +362,7 @@
         ]
       }
     ],
-    "last_updated": "2025-09-16T01:18:16.784905+00:00",
+    "last_updated": "2025-09-17T01:18:35.651046+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -580,7 +580,7 @@
         ]
       }
     ],
-    "last_updated": "2025-09-16T01:18:17.484048+00:00",
+    "last_updated": "2025-09-17T01:18:36.229219+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -601,6 +601,41 @@
         "href": "https://hirondelle.crim.ca"
       },
       {
+        "rel": "service-desc",
+        "type": "text/html",
+        "href": "https://hirondelle.crim.ca"
+      },
+      {
+        "rel": "service-meta",
+        "type": "application/json",
+        "href": "https://hirondelle.crim.ca/canarie/?f=json"
+      },
+      {
+        "rel": "service-doc",
+        "type": "text/html",
+        "href": "https://daccs.ca/"
+      },
+      {
+        "rel": "about",
+        "type": "text/html",
+        "href": "https://marbleclimate.com/about.html"
+      },
+      {
+        "rel": "describedby",
+        "type": "text/html",
+        "href": "https://birdhouse-deploy.readthedocs.io/"
+      },
+      {
+        "rel": "acl",
+        "type": "text/html",
+        "href": "https://hirondelle.crim.ca/magpie/"
+      },
+      {
+        "rel": "author",
+        "type": "text/html",
+        "href": "https://crim.ca"
+      },
+      {
         "rel": "icon",
         "type": "image/svg",
         "href": "https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png"
@@ -614,6 +649,11 @@
         "rel": "version",
         "type": "application/json",
         "href": "https://hirondelle.crim.ca/version"
+      },
+      {
+        "rel": "version-history",
+        "type": "application/json",
+        "href": "https://github.com/bird-house/birdhouse-deploy/blob/master/CHANGES.md"
       },
       {
         "rel": "registration",
