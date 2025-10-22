@@ -80,7 +80,8 @@
           "enum": [
             "offline",
             "online",
-            "unknown"
+            "unresponsive",
+            "invalid_configuration"
           ]
         },
         "contact": {

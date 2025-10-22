@@ -2,6 +2,7 @@ import json
 import os
 from copy import deepcopy
 
+import jsonschema
 import pytest
 
 from marble_node_registry import update
@@ -104,6 +105,10 @@ def example_registry(patched_registry, example_registry_content):
 def example_node_name(example_registry_content):
     """Return the name of the node in example_registry_content"""
     return list(example_registry_content)[0]
+
+@pytest.fixture
+def node_registry_schema():
+    return update._load_schema()
 
 
 class TestEmptyRegistry:
@@ -260,6 +265,9 @@ class ValidResponseTests:
             example_node_name
         ].get("last_updated")
 
+    def test_final_registry_valid(self, updated_registry, node_registry_schema):
+        jsonschema.validate(instance=updated_registry.call_args.args[0], schema=node_registry_schema)
+
 
 class InvalidResponseTests:
     """
@@ -291,6 +299,9 @@ class InvalidResponseTests:
         assert updated_registry.call_args.args[0][example_node_name].get("last_updated") == example_registry_content[
             example_node_name
         ].get("last_updated")
+
+    def test_final_registry_valid(self, updated_registry, node_registry_schema):
+        jsonschema.validate(instance=updated_registry.call_args.args[0], schema=node_registry_schema)
 
 
 class TestInitialUpdateNoServices(ValidResponseTests, InitialTests):
