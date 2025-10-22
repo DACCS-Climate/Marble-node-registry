@@ -79,7 +79,8 @@
           "type": "string",
           "enum": [
             "offline",
-            "online"
+            "online",
+            "unknown"
           ]
         },
         "contact": {

@@ -34,7 +34,7 @@ def _write_registry(registry: dict) -> None:
     """
     Write the registry as a json string to the 'node_registry.json' file.
     """
-    with open(CURRENT_REGISTRY, "w") as f:
+    with open(CURRENT_REGISTRY + ".new", "w") as f: # TODO: revert this... for testing only
         json.dump(registry, f, indent=2)
 
 
@@ -91,7 +91,7 @@ def update_registry() -> None:
             jsonschema.validate(instance=registry, schema=schema)
         except jsonschema.exceptions.ValidationError as e:
             registry[name] = org_data
-            registry[name]["status"] = "invalid_configuration"
+            registry[name]["status"] = "unknown"
             sys.stderr.write(f"invalid configuration for Node named {name}: {e}\n")
         else:
             print(f"successfully updated Node named {name}")
