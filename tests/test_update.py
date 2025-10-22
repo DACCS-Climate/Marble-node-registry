@@ -4,12 +4,13 @@ from copy import deepcopy
 
 import pytest
 
-from marble_node_registry import update
+import update # type: ignore
 
 GOOD_SERVICES = {
     "services": [
         {
             "name": "geoserver",
+            "types": ["data", "wps", "wms", "wfs"],
             "keywords": ["data", "service-wps", "service-wms", "service-wfs"],
             "description": "GeoServer is a server that allows users to view and edit geospatial data.",
             "links": [
@@ -19,7 +20,8 @@ GOOD_SERVICES = {
         },
         {
             "name": "weaver",
-            "keywords": ["service-ogcapi_processes"],
+            "types": ["ogcapi_processes"],
+            "keywords": ["service-ogcapi_processes", "some-other-keyword"],
             "description": "An OGC-API flavored Execution Management Service",
             "links": [
                 {"rel": "service", "type": "application/json", "href": "https://daccs-uoft.example.com/weaver/"},
@@ -339,11 +341,30 @@ class TestOnlineNodeUpdateWithInvalidServices(InvalidResponseTests, NonInitialTe
     services = {"services": [{"bad_key": "some_value"}]}
 
 
-class TestOnlineNodeUpdateWithInvalidServiceKeywords(InvalidResponseTests, NonInitialTests):
-    """Test when updates have previously been run and the reported services keywords are not valid"""
+class TestOnlineNodeUpdateWithInvalidServiceTypes(InvalidResponseTests, NonInitialTests):
+    """Test when updates have previously been run and the reported services types are not valid"""
 
     services = deepcopy(GOOD_SERVICES)
 
     @pytest.fixture(scope="class", autouse=True)
-    def bad_keywords(self):
-        self.services["services"][0]["keywords"] = ["something-bad"]
+    def bad_types(self):
+        self.services["services"][0]["types"] = ["something-bad"]
+
+
+class TestOnlineNodeUpdateWithNoTypes(ValidResponseTests, NonInitialTests):
+    """
+    Test when updates have previously been run and there are no services types
+
+    This ensures that service types are updated as expected from the provided keywords
+    """
+
+    services = deepcopy(GOOD_SERVICES)
+
+    @pytest.fixture(scope="class", autouse=True)
+    def no_types(self):
+        for service in self.services["services"]:
+            service.pop("types")
+
+    def test_services_updated(self, example_node_name, updated_registry):
+        """Test that the services values are updated"""
+        assert updated_registry.call_args.args[0][example_node_name]["services"] == GOOD_SERVICES["services"]
