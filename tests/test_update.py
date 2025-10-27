@@ -267,7 +267,7 @@ class ValidResponseTests:
             example_node_name
         ].get("last_updated")
 
-    def test_final_registry_valid(self, updated_registry, node_registry_schema):
+    def test_final_registry_validity(self, updated_registry, node_registry_schema):
         jsonschema.validate(instance=updated_registry.call_args.args[0], schema=node_registry_schema)
 
 
@@ -302,7 +302,7 @@ class InvalidResponseTests:
             example_node_name
         ].get("last_updated")
 
-    def test_final_registry_valid(self, updated_registry, node_registry_schema):
+    def test_final_registry_validity(self, updated_registry, node_registry_schema):
         jsonschema.validate(instance=updated_registry.call_args.args[0], schema=node_registry_schema)
 
 
