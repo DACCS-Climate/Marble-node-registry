@@ -70,8 +70,7 @@ def update_registry() -> None:
         try:
             data["version"] = version_response.json().get("version", "unknown")
         except requests.exceptions.JSONDecodeError:
-            registry[name] = org_data
-            registry[name]["status"] = "unresponsive"
+            data["status"] = "unresponsive"
             sys.stderr.write(
                 f"invalid json returned when accessing version for Node named {name}: {version_response.text}\n"
             )
@@ -80,8 +79,7 @@ def update_registry() -> None:
         try:
             data["services"] = services_response.json().get("services", [])
         except requests.exceptions.JSONDecodeError:
-            registry[name] = org_data
-            registry[name]["status"] = "unresponsive"
+            data["status"] = "unresponsive"
             sys.stderr.write(
                 f"invalid json returned when accessing services for Node named {name}: {services_response.text}\n"
             )
@@ -90,12 +88,11 @@ def update_registry() -> None:
         try:
             jsonschema.validate(instance=registry, schema=schema)
         except jsonschema.exceptions.ValidationError as e:
-            registry[name] = org_data
-            registry[name]["status"] = "invalid_configuration"
+            registry[name] = {**org_data, "status": "invalid_configuration"}  # do not include services data if it is invalid
             sys.stderr.write(f"invalid configuration for Node named {name}: {e}\n")
         else:
             print(f"successfully updated Node named {name}")
-            registry[name]["last_updated"] = datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
+            data["last_updated"] = datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
             data["status"] = "online"
 
     _write_registry(registry)
