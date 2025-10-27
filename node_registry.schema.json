@@ -80,7 +80,9 @@
           "type": "string",
           "enum": [
             "offline",
-            "online"
+            "online",
+            "unresponsive",
+            "invalid_configuration"
           ]
         },
         "contact": {
