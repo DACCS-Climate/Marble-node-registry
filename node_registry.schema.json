@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/refs/tags/1.2.0/node_registry.schema.json",
   "patternProperties": {
     "^[a-zA-Z0-9]+$": {
       "type": "object",
@@ -167,6 +168,7 @@
               "auth",
               "management",
               "catalog",
+              "stac",
               "data",
               "jupyterhub",
               "other",
@@ -175,7 +177,10 @@
               "wfs",
               "wcs",
               "ogcapi_processes",
-              "ogcapi_dggs"
+              "ogcapi_dggs",
+              "ogcapi_coverages",
+              "ogcapi_features",
+              "ogcapi_records"
             ]
           }
         },
