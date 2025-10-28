@@ -61,12 +61,16 @@ def update_registry() -> None:
                 version_url = link["href"]
         try:
             # This assumes the json is initially valid according to the schema
-            services_response = requests.get(services_url, headers={"Accept": "application/json"})
-            version_response = requests.get(version_url, headers={"Accept": "application/json"})
+            services_response = requests.get(services_url, headers={"Accept": "application/json"}, timeout=10)
+            version_response = requests.get(version_url, headers={"Accept": "application/json"}, timeout=10)
         except requests.exceptions.ConnectionError as e:
             # if either url fails, report that the node is offline
             data["status"] = "offline"
             sys.stderr.write(f"unable to access node named {name}. Error message: {e}\n")
+            continue
+        except requests.exceptions.Timeout as e:
+            data["status"] = "unresponsive"
+            sys.stderr.write(f"node named '{name}' is unrespsonsive. Error message: {e}\n")
             continue
 
         try:
