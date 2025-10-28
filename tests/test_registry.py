@@ -35,6 +35,7 @@ def registry_content_with_services(registry_content):
         {
             "name": "test-service",
             "keywords": ["other"],
+            "types": ["other"],
             "description": "test service",
             "version": "1.2.3",
             "links": [

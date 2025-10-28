@@ -6,6 +6,8 @@ import requests
 import datetime
 from copy import deepcopy
 
+from migrations import MIGRATIONS
+
 THIS_DIR = os.path.dirname(__file__)
 ROOT_DIR = os.path.dirname(THIS_DIR)
 SCHEMA_FILE = os.path.join(ROOT_DIR, "node_registry.schema.json")
@@ -87,6 +89,15 @@ def update_registry() -> None:
             sys.stderr.write(
                 f"invalid json returned when accessing services for Node named {name}: {services_response.text}\n"
             )
+            continue
+
+        try:
+            for migration in MIGRATIONS:
+                migration(data)
+        except Exception as e:
+            registry[name] = org_data
+            registry[name]["status"] = "invalid_configuration"
+            sys.stderr.write(f"unable to apply migrations for Node named {name}: {e}.")
             continue
 
         try:

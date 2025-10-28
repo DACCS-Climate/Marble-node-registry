@@ -41,6 +41,12 @@
           "service-wms",
           "service-wfs"
         ],
+        "types": [
+          "data",
+          "wps",
+          "wms",
+          "wfs"
+        ],
         "description": "GeoServer is a server that allows users to view and edit geospatial data.",
         "links": [
           {
@@ -59,6 +65,9 @@
         "name": "weaver",
         "keywords": [
           "service-ogcapi_processes"
+        ],
+        "types": [
+          "ogcapi_processes"
         ],
         "description": "An OGC-API flavored Execution Management Service",
         "links": [
