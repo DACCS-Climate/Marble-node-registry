@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/refs/tags/1.2.0/node_registry.schema.json",
+  "$id": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/refs/tags/1.3.0/node_registry.schema.json",
   "patternProperties": {
     "^[a-zA-Z0-9]+$": {
       "type": "object",
