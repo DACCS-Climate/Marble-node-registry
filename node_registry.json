@@ -154,5 +154,44 @@
         "href": "mailto:support-geo@crim.ca"
       }
     ]
+  },
+  "PCICGarryOak": {
+    "name": "Garry Oak",
+    "affiliation": "Pacific Climate Impacts Consortium",
+    "description": "A Marble node hosted at the Pacific Climate Impacts Consortium.",
+    "date_added": "2026-03-09T13:24:24+0000",
+    "location": {
+      "longitude": -123.302,
+      "latitude": 48.462
+    },
+    "contact": "pcic.support@uvic.ca",
+    "registration_status": "limited",
+    "links": [
+      {
+        "rel": "service",
+        "type": "text/html",
+        "href": "https://garryoak.pacificclimate.org"
+      },
+      {
+        "rel": "icon",
+        "type": "image/png",
+        "href": "https://garryoak.pacificclimate.org/pcic-logo.png"
+      },
+      {
+        "rel": "collection",
+        "type": "application/json",
+        "href": "https://garryoak.pacificclimate.org/services"
+      },
+      {
+        "rel": "version",
+        "type": "application/json",
+        "href": "https://garryoak.pacificclimate.org/version"
+      },
+      {
+        "rel": "registration",
+        "type": "text/html",
+        "href": "https://garryoak.pacificclimate.org/register"
+      }
+    ]
   }
 }
