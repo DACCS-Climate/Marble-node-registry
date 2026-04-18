@@ -661,7 +661,7 @@
         ]
       }
     ],
-    "last_updated": "2026-04-17T02:32:26.186756+00:00",
+    "last_updated": "2026-04-18T02:23:26.731797+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -702,7 +702,7 @@
         "href": "https://forms.office.com/Pages/ResponsePage.aspx?id=jf6iw_Q8V02umCWsOYvz8Pa-ghpkFLtEhY0_uNsYGzNUM0RKREtBODQ4S0ZXNEZEUFlZRExJWkhVQSQlQCN0PWcu"
       }
     ],
-    "version": "2.25.0",
+    "version": "2.26.4",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
@@ -1276,7 +1276,7 @@
         ]
       }
     ],
-    "last_updated": "2026-04-17T02:32:26.967794+00:00",
+    "last_updated": "2026-04-18T02:23:27.482466+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -2067,7 +2067,7 @@
         ]
       }
     ],
-    "last_updated": "2026-04-17T02:32:27.666638+00:00",
+    "last_updated": "2026-04-18T02:23:28.117497+00:00",
     "status": "online"
   },
   "PCICGarryOak": {
@@ -2774,7 +2774,7 @@
         ]
       }
     ],
-    "last_updated": "2026-04-17T02:32:28.135007+00:00",
+    "last_updated": "2026-04-18T02:23:28.652864+00:00",
     "status": "online"
   }
 }
