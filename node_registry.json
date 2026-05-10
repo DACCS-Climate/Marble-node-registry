@@ -37,7 +37,7 @@
         "href": "https://docs.google.com/forms/d/e/1FAIpQLSf3w3bBBkEcI7ehonci56rQnHsz-OPltnbwls9KogvhXWxTFQ/viewform"
       }
     ],
-    "status": "unresponsive"
+    "status": "offline"
   },
   "PAVICS": {
     "name": "PAVICS",
@@ -651,7 +651,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-09T02:46:07.195127+00:00",
+    "last_updated": "2026-05-10T02:52:47.543827+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -1442,7 +1442,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-09T02:46:07.573658+00:00",
+    "last_updated": "2026-05-10T02:52:47.995961+00:00",
     "status": "online"
   },
   "PCICGarryOak": {
@@ -2149,7 +2149,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-09T02:46:08.241820+00:00",
+    "last_updated": "2026-05-10T02:52:48.844798+00:00",
     "status": "online"
   }
 }
