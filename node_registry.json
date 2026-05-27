@@ -627,7 +627,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-26T03:29:14.090455+00:00",
+    "last_updated": "2026-05-27T03:42:44.765425+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -1242,7 +1242,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-26T03:29:14.740513+00:00",
+    "last_updated": "2026-05-27T03:42:45.634604+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -1322,7 +1322,7 @@
         "href": "mailto:support-geo@crim.ca"
       }
     ],
-    "version": "2.27.0",
+    "version": "2.28.0",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
@@ -2033,7 +2033,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-26T03:29:15.548766+00:00",
+    "last_updated": "2026-05-27T03:42:46.393986+00:00",
     "status": "online"
   },
   "PCICGarryOak": {
@@ -2740,7 +2740,7 @@
         ]
       }
     ],
-    "last_updated": "2026-05-26T03:29:16.041498+00:00",
+    "last_updated": "2026-05-27T03:42:47.041126+00:00",
     "status": "online"
   }
 }
