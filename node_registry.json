@@ -627,7 +627,7 @@
         ]
       }
     ],
-    "last_updated": "2026-06-18T03:54:26.715413+00:00",
+    "last_updated": "2026-06-19T04:14:23.623385+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -1250,7 +1250,7 @@
         ]
       }
     ],
-    "last_updated": "2026-06-18T03:54:27.492560+00:00",
+    "last_updated": "2026-06-19T04:14:23.974430+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -2049,7 +2049,7 @@
         ]
       }
     ],
-    "last_updated": "2026-06-18T03:54:28.312557+00:00",
+    "last_updated": "2026-06-19T04:14:24.428968+00:00",
     "status": "online"
   },
   "PCICGarryOak": {
@@ -2090,6 +2090,794 @@
         "href": "https://garryoak.pacificclimate.org/register"
       }
     ],
-    "status": "offline"
+    "version": "2.28.1",
+    "services": [
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "magpie",
+        "version": "5.1.0",
+        "types": [
+          "auth",
+          "management"
+        ],
+        "keywords": [
+          "other"
+        ],
+        "description": "Authentication and Resource Management Service of Users, Groups and Access Control of other services.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/magpie/?f=html"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pavics-magpie.readthedocs.io/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/swagger+json",
+            "href": "https://garryoak.pacificclimate.org/magpie/json"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/magpie:5.1.0",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "swagger",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/magpie/api"
+          },
+          {
+            "rel": "openapi",
+            "type": "application/swagger+json",
+            "href": "https://garryoak.pacificclimate.org/magpie/json",
+            "title": "OpenAPI Definition"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://github.com/Ouranosinc/Magpie",
+            "title": "Magpie Code Repository"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/Ouranosinc/Magpie/refs/heads/master/LICENSE"
+          },
+          {
+            "rel": "author",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/Ouranosinc/Magpie/refs/heads/master/AUTHORS.rst"
+          },
+          {
+            "rel": "version-history",
+            "type": "text/html",
+            "href": "https://github.com/Ouranosinc/Magpie/blob/master/CHANGES.rst",
+            "title": "Magpie Change Log"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "twitcher",
+        "version": "0.11.1-magpie-5.1.0",
+        "types": [
+          "auth",
+          "management"
+        ],
+        "keywords": [
+          "other"
+        ],
+        "description": "Authorization and Policy Enforcement Point of platform services.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/twitcher/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://twitcher.readthedocs.io/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/twitcher/info"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "pavics/twitcher:magpie-5.1.0",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "openapi",
+            "type": "application/vnd.oai.openapi+json;version=3.0",
+            "href": "https://garryoak.pacificclimate.org/twitcher/__api__",
+            "title": "OpenAPI Definition"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://github.com/bird-house/twitcher",
+            "title": "Twitcher Code Repository"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/bird-house/twitcher/refs/heads/master/LICENSE.txt"
+          },
+          {
+            "rel": "author",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/bird-house/twitcher/refs/heads/master/AUTHORS.rst"
+          },
+          {
+            "rel": "version-history",
+            "type": "text/html",
+            "href": "https://github.com/bird-house/twitcher/blob/master/CHANGES.rst",
+            "title": "Twitcher Change Log"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "cowbird",
+        "version": "2.7.1",
+        "types": [
+          "auth",
+          "management"
+        ],
+        "keywords": [
+          "other"
+        ],
+        "description": "Cowbird is a middleware that manages interactions between various birds of the bird-house stack.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/cowbird/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pavics-cowbird.readthedocs.io/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/html",
+            "href": "https://github.com/ouranosinc/cowbird/api"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/cowbird:2.7.1-webservice",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "swagger",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/cowbird/api"
+          },
+          {
+            "rel": "openapi",
+            "type": "application/swagger+json",
+            "href": "https://garryoak.pacificclimate.org/cowbird/json",
+            "title": "OpenAPI Definition"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://github.com/Ouranosinc/cowbird/",
+            "title": "Cowbird Code Repository"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/Ouranosinc/Cowbird/refs/heads/master/LICENSE"
+          },
+          {
+            "rel": "author",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/Ouranosinc/Cowbird/refs/heads/master/AUTHORS.rst"
+          },
+          {
+            "rel": "version-history",
+            "type": "text/html",
+            "href": "https://github.com/Ouranosinc/Cowbird/blob/master/CHANGES.rst",
+            "title": "Cowbird Change Log"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "stac",
+        "version": "6.2.1-crim-2.3.1",
+        "types": [
+          "catalog",
+          "data"
+        ],
+        "keywords": [
+          "catalog"
+        ],
+        "description": "Searchable spatiotemporal metadata describing climate and Earth observation datasets.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/stac/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/stac/api.html"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/vnd.oai.openapi+json;version=3.0",
+            "href": "https://garryoak.pacificclimate.org/stac/api"
+          },
+          {
+            "title": "OpenAPI specification",
+            "rel": "openapi",
+            "type": "application/vnd.oai.openapi+json;version=3.0",
+            "href": "https://garryoak.pacificclimate.org/stac/api"
+          },
+          {
+            "rel": "conformance",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/stac/conformance"
+          },
+          {
+            "rel": "describedby",
+            "type": "text/html",
+            "href": "https://github.com/radiantearth/stac-api-spec/tree/v1.0.0"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "ghcr.io/crim-ca/stac-app:2.3.1",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/stac-browser/"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/crim-ca/stac-app/refs/heads/main/LICENSE"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "canarie-api",
+        "version": "1.1.0",
+        "types": [
+          "management"
+        ],
+        "keywords": [
+          "Canarie",
+          "Documentation",
+          "Monitoring",
+          "Status"
+        ],
+        "description": "An endpoint monitoring tool that shows the current status of other components in the software stack.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/canarie/"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "pavics/canarieapi:1.1.0",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://canarieapi.readthedocs.io"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://birdhouse-deploy.readthedocs.io/en/latest/birdhouse/components/README.html#canarie-api"
+          },
+          {
+            "rel": "source",
+            "type": "text/html",
+            "href": "https://github.com/Ouranosinc/CanarieAPI"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/Ouranosinc/CanarieAPI/refs/heads/master/LICENSE"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "geoserver",
+        "version": "2.27.2",
+        "types": [
+          "data",
+          "wms",
+          "wfs",
+          "wps"
+        ],
+        "keywords": [
+          "data",
+          "service-wms",
+          "service-wfs",
+          "service-wps"
+        ],
+        "description": "GeoServer is a server that allows users to view and edit geospatial data.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/geoserver/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://docs.geoserver.org/"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/geoserver:2.27.2--v2025.08.05-kartoza",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "finch",
+        "version": "0.12.1",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A Web Processing Service for Climate Indicators.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://finch.readthedocs.io"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/finch?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/birdhouse/finch:version-0.12.1",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "raven",
+        "version": "0.19.0",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A WPS providing hydrological modeling and analysis services.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pavics-raven.readthedocs.io"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/raven?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/raven:0.19.0",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "hummingbird",
+        "version": "0.5.0-dev",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A WPS for metadata compliance checks used in the climate science community.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://birdhouse-hummingbird.readthedocs.io"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/hummingbird?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/hummingbird:0.5_dev",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "thredds",
+        "version": "5.5.0-unidata-2024-11-19",
+        "types": [
+          "data",
+          "catalog"
+        ],
+        "keywords": [
+          "data",
+          "catalog"
+        ],
+        "description": "A server that provides catalog, metadata, and data access services for scientific data.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/thredds/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://www.unidata.ucar.edu/software/tds/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/thredds/catalog.xml"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/thredds-docker:5.5-unidata-2024-11-19-with-tds-plugin-jar-with-dependencies.jar",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/thredds/info/serverInfo.html"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "jupyterhub",
+        "version": "5.4.5-20260506",
+        "types": [
+          "jupyterhub"
+        ],
+        "keywords": [
+          "jupyterhub"
+        ],
+        "description": "An interactive development environment use to create and share documents that contain live code.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/jupyter"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://jupyter.org/hub"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/jupyterhub:5.4.5-20260506",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "stac-browser",
+        "version": "5.0.0-rc.0-crim",
+        "types": [
+          "catalog",
+          "data"
+        ],
+        "keywords": [
+          "catalog"
+        ],
+        "description": "A web interface to browse the STAC catalogs.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/stac-browser/"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://github.com/radiantearth/stac-browser"
+          },
+          {
+            "rel": "alternate",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/stac/"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "ghcr.io/crim-ca/stac-browser:5.0.0-rc.0-crim",
+            "title": "Docker Image"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
+        "name": "weaver",
+        "version": "6.8.3",
+        "types": [
+          "ogcapi_processes",
+          "wps"
+        ],
+        "keywords": [
+          "service-ogcapi_processes"
+        ],
+        "description": "An OGC-API flavored Execution Management Service",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/weaver/?f=html"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pavics-weaver.readthedocs.io/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/weaver/?f=json"
+          },
+          {
+            "rel": "swagger",
+            "type": "text/html",
+            "href": "https://garryoak.pacificclimate.org/weaver/api",
+            "title": "Swagger UI"
+          },
+          {
+            "rel": "openapi",
+            "type": "application/vnd.oai.openapi+json; version=3.0",
+            "href": "https://garryoak.pacificclimate.org/weaver/api?f=json",
+            "title": "OpenAPI Definition"
+          },
+          {
+            "rel": "conformance",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/weaver/conformance/"
+          },
+          {
+            "rel": "http://www.opengis.net/def/rel/ogc/1.0/conformance",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/weaver/conformance/"
+          },
+          {
+            "rel": "http://www.opengis.net/def/rel/ogc/1.0/data-meta",
+            "type": "application/json",
+            "href": "https://garryoak.pacificclimate.org/services/weaver/"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pavics/weaver:6.8.3",
+            "title": "Docker Image"
+          },
+          {
+            "rel": "license",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/crim-ca/weaver/refs/heads/master/LICENSE.txt",
+            "title": "Weaver License"
+          },
+          {
+            "rel": "cite-as",
+            "type": "text/plain",
+            "href": "https://raw.githubusercontent.com/crim-ca/weaver/refs/heads/master/CITATION.cff",
+            "title": "Weaver Citation"
+          },
+          {
+            "rel": "about",
+            "type": "text/html",
+            "href": "https://github.com/crim-ca/weaver",
+            "title": "Weaver Code Repository"
+          },
+          {
+            "rel": "version-history",
+            "type": "text/html",
+            "href": "https://github.com/crim-ca/weaver/blob/master/CHANGES.rst",
+            "title": "Weaver Change Log"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
+        "name": "thunderbird",
+        "version": "1.3.1",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A Web Processing Service for preparing climate datasets for Climate Explorer.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/thunderbird?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pacificclimate.github.io/thunderbird/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/thunderbird?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pcic/thunderbird:1.8.0"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
+        "name": "sandpiper",
+        "version": "1.8.0",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A Web Processing Service for the Plan2Adapt rule engine.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/sandpiper?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pacificclimate.github.io/sandpiper/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/sandpiper?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pcic/sandpiper:1.8.0"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
+        "name": "chickadee",
+        "version": "1.0.0",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A Web Processing Service for PCIC\u2019s ClimDown package.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/chickadee?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pacificclimate.github.io/chickadee/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/chickadee?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pcic/chickadee:1.0.0"
+          }
+        ]
+      },
+      {
+        "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.2.0/node_registry.schema.json#service",
+        "name": "quail",
+        "version": "0.7.2",
+        "types": [
+          "wps"
+        ],
+        "keywords": [
+          "service-wps"
+        ],
+        "description": "A Web Processing Service for climdex.pcic climate indices.",
+        "links": [
+          {
+            "rel": "service",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/quail?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-doc",
+            "type": "text/html",
+            "href": "https://pacificclimate.github.io/quail/"
+          },
+          {
+            "rel": "service-desc",
+            "type": "text/xml",
+            "href": "https://garryoak.pacificclimate.org/twitcher/ows/proxy/quail?service=WPS&request=GetCapabilities"
+          },
+          {
+            "rel": "service-meta",
+            "type": "application/vnd.oci.image.index.v1+json",
+            "href": "registry.hub.docker.com/pcic/quail:0.7.2"
+          }
+        ]
+      }
+    ],
+    "last_updated": "2026-06-19T04:14:25.132808+00:00",
+    "status": "online"
   }
 }
