@@ -635,7 +635,7 @@
         ]
       }
     ],
-    "last_updated": "2026-10-07T04:29:15.579950+00:00",
+    "last_updated": "2026-10-08T04:40:20.792131+00:00",
     "status": "online"
   },
   "PAVICS": {
@@ -1258,7 +1258,7 @@
         ]
       }
     ],
-    "last_updated": "2026-10-07T04:29:16.284032+00:00",
+    "last_updated": "2026-10-08T04:40:21.490658+00:00",
     "status": "online"
   },
   "Hirondelle": {
@@ -1338,12 +1338,12 @@
         "href": "mailto:support-geo@crim.ca"
       }
     ],
-    "version": "2.29.4",
+    "version": "2.33.0",
     "services": [
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "magpie",
-        "version": "5.1.1",
+        "version": "5.1.2",
         "types": [
           "auth",
           "management"
@@ -1371,7 +1371,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/magpie:5.1.1",
+            "href": "registry.hub.docker.com/pavics/magpie:5.1.2",
             "title": "Docker Image"
           },
           {
@@ -1412,7 +1412,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "twitcher",
-        "version": "0.11.1-magpie-5.1.1",
+        "version": "0.11.1-magpie-5.1.2",
         "types": [
           "auth",
           "management"
@@ -1440,7 +1440,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "pavics/twitcher:magpie-5.1.1",
+            "href": "pavics/twitcher:magpie-5.1.2",
             "title": "Docker Image"
           },
           {
@@ -1545,7 +1545,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "stac",
-        "version": "6.2.1-crim-2.3.1",
+        "version": "6.3.2-crim-2.4.0",
         "types": [
           "catalog",
           "data"
@@ -1589,7 +1589,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "ghcr.io/crim-ca/stac-app:2.3.1",
+            "href": "ghcr.io/crim-ca/stac-app:2.4.0",
             "title": "Docker Image"
           },
           {
@@ -1607,7 +1607,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "canarie-api",
-        "version": "1.2.0",
+        "version": "1.2.1",
         "types": [
           "management"
         ],
@@ -1627,7 +1627,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "pavics/canarieapi:1.2.0",
+            "href": "pavics/canarieapi:1.2.1",
             "title": "Docker Image"
           },
           {
@@ -1838,7 +1838,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "jupyterhub",
-        "version": "5.4.5-20260506",
+        "version": "5.5.0-20260710",
         "types": [
           "jupyterhub"
         ],
@@ -1860,7 +1860,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/jupyterhub:5.4.5-20260506",
+            "href": "registry.hub.docker.com/pavics/jupyterhub:5.5.0-20260710",
             "title": "Docker Image"
           }
         ]
@@ -1868,7 +1868,7 @@
       {
         "$schema": "https://raw.githubusercontent.com/DACCS-Climate/Marble-node-registry/1.3.0/node_registry.schema.json#service",
         "name": "weaver",
-        "version": "6.16.0-dev0",
+        "version": "6.16.0",
         "types": [
           "ogcapi_processes",
           "wps"
@@ -1923,7 +1923,7 @@
           {
             "rel": "service-meta",
             "type": "application/vnd.oci.image.index.v1+json",
-            "href": "registry.hub.docker.com/pavics/weaver:6.16.0-dev0",
+            "href": "registry.hub.docker.com/pavics/weaver:6.16.0",
             "title": "Docker Image"
           },
           {
@@ -2057,7 +2057,7 @@
         ]
       }
     ],
-    "last_updated": "2026-10-07T04:29:17.168710+00:00",
+    "last_updated": "2026-10-08T04:40:22.277366+00:00",
     "status": "online"
   },
   "PCICGarryOak": {
@@ -2885,7 +2885,7 @@
         ]
       }
     ],
-    "last_updated": "2026-10-07T04:29:17.870497+00:00",
+    "last_updated": "2026-10-08T04:40:22.941875+00:00",
     "status": "online"
   }
 }
